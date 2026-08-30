@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirLink - PT Air Lintas Komunikasi | Internet & IT Solution</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS (Animate On Scroll) -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {    
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    // Warna Teks Utama & Navy Gelap
+                            slate: '#f0f9f8',   // Background Section Sekunder (Light Soft Toska)
+                            accent: '#00a896',  // Warna Utama Tombol / Toska Broadband
+                            light: '#02c39a',   // Aksen Hijau Cyan Segar
+                            muted: '#64748b'    // Teks Sekunder
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+        <!-- NAVBAR (SUDAH DIPERBAIKI UNTUK MOBILE) -->
+        <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="#" class="flex items-center">
+                        <img src="img/AR.png" alt="AirLink Logo" class="h-24 md:h-15 w-auto object-contain">
+                    </a>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                        <a href="tentang.html" class="hover:text-brand-accent transition">Tentang</a>
+                        <a href="keunggulan.html" class="hover:text-brand-accent transition">Keunggulan</a>
+                        <a href="layanan.html" class="hover:text-brand-accent transition">Layanan</a>
+                        <a href="infrastruktur.html" class="hover:text-brand-accent transition">Infrastruktur</a>
+                        <a href="coverage.html" class="hover:text-brand-accent transition">Coverage</a>
+                        <a href="partner.html" class="hover:text-brand-accent transition">Partner & Klien</a>
+                        <a href="kontak.html" class="bg-brand-accent hover:bg-teal-600 text-white px-5 py-2.5 rounded-xl font-bold transition shadow-md shadow-brand-accent/20">Hubungi Kami</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-700 focus:outline-none p-2">
+                        <i id="hamburger-icon" class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Container (YANG TADI HILANG) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-teal-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+                <a href="tentang.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-brand-accent transition">Tentang</a>
+                <a href="keunggulan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-brand-accent transition">Keunggulan</a>
+                <a href="layanan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-brand-accent transition">Layanan</a>
+                <a href="infrastruktur.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-brand-accent transition">Infrastruktur</a>
+                <a href="coverage.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-brand-accent transition">Coverage</a>
+                <a href="partner.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-brand-accent transition">Partner & Klien</a>
+                <a href="kontak.html" class="mobile-link block w-full text-center px-4 py-2.5 bg-brand-accent text-white font-bold text-xs rounded-xl shadow-md mt-2">
+                    Hubungi Kami
+                </a>
+            </div>
+        </nav>
+
+    <!-- HERO SECTION VIDEO (ELEGANT CINEMATIC CONTRAST) -->
+    <section class="relative pt-28 pb-16 bg-gradient-to-br from-brand-dark via-slate-900 to-black overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
+            
+            <!-- Header Teks (Di Atas Video) -->
+            <div class="max-w-3xl mx-auto mb-10">
+                <span class="inline-block px-4 py-1.5 bg-brand-accent/20 border border-brand-accent/40 rounded-full text-brand-light text-xs font-semibold tracking-wide uppercase mb-4">
+                    Internet Service Provider
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-white mb-4">
+                    Experience of <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-emerald-400">Unlimited Access</span>
+                </h1>
+                <p class="text-gray-300 text-base md:text-lg mb-6 leading-relaxed">
+                    PT Air Lintas Komunikasi menyediakan solusi telekomunikasi terpadu, koneksi internet berkecepatan tinggi, dan infrastruktur IT yang stabil.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <a href="#layanan" class="bg-brand-accent hover:bg-teal-600 text-white px-6 py-3 rounded-xl font-semibold transition shadow-lg shadow-brand-accent/20">Layanan Kami</a>
+                    <a href="#kontak" class="border border-gray-600 hover:border-brand-light text-white px-6 py-3 rounded-xl font-semibold transition">Konsultasi Gratis</a>
+                </div>
+            </div>
+
+            <!-- Video Box Bersih -->
+            <div class="relative w-full h-[380px] md:h-[500px] rounded-3xl overflow-hidden border border-gray-700/60 shadow-2xl">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                    <source src="img/airlink.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TENTANG & LIVE NOC STATUS (WITH STEP 1 ANIMATIONS) -->
+<section id="about" class="py-24 bg-white relative overflow-hidden border-t border-teal-100">
+    
+    <!-- Background Ambient Glow -->
+    <div class="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-brand-accent/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Grid Atas: Deskripsi vs Live NOC Widget -->
+        <div class="grid lg:grid-cols-12 gap-12 items-stretch">
+            
+            <!-- Kolom Kiri: Profil & Stats -->
+            <div class="lg:col-span-6 flex flex-col justify-between space-y-8" data-aos="fade-right" data-aos-duration="1000">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-teal-50 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-wider mb-4">
+                        <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping"></span>
+                        Profil Perusahaan
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight mb-6 leading-tight">
+                        Solusi Jaringan Masa Depan Bersama <span class="text-brand-accent">AirLink</span>
+                    </h2>
+                    <p class="text-slate-700 leading-relaxed mb-4 text-sm md:text-base">
+                        <strong class="text-brand-dark">Air Lintas Komunikasi (AirLink)</strong> adalah penyedia jasa telekomunikasi, internet, dan IT Solution yang melayani berbagai sektor—mulai dari pemerintahan, enterprise, keuangan, perhotelan, hingga industri manufaktur.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Dioperasikan oleh tim profesional berlisensi resmi Internet Service Provider, kami menggaransi kestabilan jaringan, fleksibilitas tinggi, dan efisiensi biaya terukur untuk bisnis Anda.
+                    </p>
+                </div>
+
+                <!-- Stats Highlighting dengan Animasi Counter-Up -->
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="bg-brand-slate p-5 rounded-2xl border border-teal-100 shadow-sm hover:border-brand-accent transition duration-300 relative overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+                        <h4 class="text-3xl md:text-4xl font-extrabold text-brand-accent">
+                            <span class="counter" data-target="99.9" data-decimals="1">0</span>%
+                        </h4>
+                        <p class="text-xs font-semibold text-slate-600 mt-1">Uptime SLA Guarantee</p>
+                    </div>
+                    <div class="bg-brand-slate p-5 rounded-2xl border border-teal-100 shadow-sm hover:border-brand-accent transition duration-300 relative overflow-hidden" data-aos="zoom-in" data-aos-delay="300">
+                        <h4 class="text-3xl md:text-4xl font-extrabold text-brand-accent">
+                            <span class="counter" data-target="24">0</span> / 7
+                        </h4>
+                        <p class="text-xs font-semibold text-slate-600 mt-1">Dedicated Tech Support</p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Kolom Kanan: Live NOC Network Status Widget (FULL STEP 1 + 2 + 3) -->
+    <div class="lg:col-span-6 bg-white p-6 md:p-8 rounded-3xl border border-teal-100 shadow-xl flex flex-col justify-between relative overflow-hidden group" data-aos="fade-left" data-aos-duration="1000">
+    
+    <!-- STEP 3: Animated Radar Scanline Overlay -->
+    <div class="absolute inset-0 pointer-events-none opacity-20 bg-[linear-gradient(to_bottom,transparent_0%,rgba(0,168,150,0.15)_50%,transparent_100%)] bg-[length:100%_8px] animate-[scanline_4s_linear_infinite]"></div>
+
+    <div class="relative z-10">
+        <!-- Header Card Status -->
+        <div class="flex items-center justify-between mb-6 pb-4 border-b border-teal-100">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center text-brand-accent text-xl shadow-sm relative">
+                    <i class="fa-solid fa-server relative z-10"></i>
+                    <!-- Pulse Radar Effect Behind Icon -->
+                    <span class="absolute inset-0 rounded-xl bg-teal-200/60 animate-ping opacity-40"></span>
+                </div>
+                <div>
+                    <h3 class="text-lg md:text-xl font-bold text-brand-dark">Network Status (NOC)</h3>
+                    <p class="text-xs text-slate-500 font-mono">AirLink Infrastructure // Live Monitoring</p>
+                </div>
+            </div>
+            
+            <!-- Live Indicator Badge with Dual-Pulse -->
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-600 text-xs font-bold rounded-full border border-emerald-200 shadow-sm relative overflow-hidden">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Operational
+            </span>
+        </div>
+
+        <!-- Items Status dengan Live Progress Bar -->
+        <div class="space-y-3.5">
+            
+            <!-- Item 1: Core Fiber -->
+            <div class="p-3.5 bg-brand-slate rounded-xl border border-teal-100/80 hover:border-brand-accent transition relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-network-wired text-brand-accent text-sm"></i>
+                        <div>
+                            <span class="text-xs md:text-sm font-semibold text-slate-800 block">Core Fiber Backbone</span>
+                            <span class="text-[10px] text-slate-500">Latency: ~1ms (Ring Protection)</span>
+                        </div>
+                    </div>
+                    <span class="font-mono font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-lg border border-emerald-200 text-xs">
+                        99.9% Optimal
+                    </span>
+                </div>
+                <div class="w-full h-1.5 bg-teal-100/60 rounded-full overflow-hidden">
+                    <div class="noc-progress-bar h-full bg-gradient-to-r from-teal-400 to-brand-accent rounded-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(0,168,150,0.6)]" data-width="99.9%" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Item 2: Peering -->
+            <div class="p-3.5 bg-brand-slate rounded-xl border border-teal-100/80 hover:border-brand-accent transition relative overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe text-brand-accent text-sm"></i>
+                        <div>
+                            <span class="text-xs md:text-sm font-semibold text-slate-800 block">Global & Local Peering</span>
+                            <span class="text-[10px] text-slate-500">SGIX / OpenIXP / JKTIX Direct</span>
+                        </div>
+                    </div>
+                    <span class="font-mono font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-lg border border-emerald-200 text-xs">
+                        Low Latency
+                    </span>
+                </div>
+                <div class="w-full h-1.5 bg-teal-100/60 rounded-full overflow-hidden">
+                    <div class="noc-progress-bar h-full bg-gradient-to-r from-teal-400 to-brand-accent rounded-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(0,168,150,0.6)]" data-width="95%" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Item 3: Data Center -->
+            <div class="p-3.5 bg-brand-slate rounded-xl border border-teal-100/80 hover:border-brand-accent transition relative overflow-hidden group" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-database text-brand-accent text-sm"></i>
+                        <div>
+                            <span class="text-xs md:text-sm font-semibold text-slate-800 block">Data Center & Cloud Node</span>
+                            <span class="text-[10px] text-slate-500">Tier-3 Interconnection</span>
+                        </div>
+                    </div>
+                    <span class="font-mono font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-lg border border-emerald-200 text-xs">
+                        Connected
+                    </span>
+                </div>
+                <div class="w-full h-1.5 bg-teal-100/60 rounded-full overflow-hidden">
+                    <div class="noc-progress-bar h-full bg-gradient-to-r from-teal-400 to-brand-accent rounded-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(0,168,150,0.6)]" data-width="98%" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Item 4: Monitoring -->
+            <div class="p-3.5 bg-brand-slate rounded-xl border border-teal-100/80 hover:border-brand-accent transition relative overflow-hidden group" data-aos="fade-up" data-aos-delay="500">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-brand-accent text-sm"></i>
+                        <div>
+                            <span class="text-xs md:text-sm font-semibold text-slate-800 block">Proactive Monitoring</span>
+                            <span class="text-[10px] text-slate-500">24/7 Automated Failover System</span>
+                        </div>
+                    </div>
+                    <span class="font-mono font-bold text-brand-accent bg-teal-50 px-2.5 py-0.5 rounded-lg border border-teal-200 text-xs">
+                        Active
+                    </span>
+                </div>
+                <div class="w-full h-1.5 bg-teal-100/60 rounded-full overflow-hidden">
+                    <div class="noc-progress-bar h-full bg-gradient-to-r from-teal-400 to-brand-accent rounded-full transition-all duration-1000 ease-out shadow-[0_0_8px_rgba(0,168,150,0.6)]" data-width="100%" style="width: 0%;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Card Info -->
+        <div class="mt-4 pt-3 border-t border-teal-100 flex items-center justify-between text-[11px] text-slate-500 relative z-10">
+            <span class="flex items-center gap-1.5 font-mono">
+                <i class="fa-solid fa-headset text-brand-accent"></i>
+                NOC Engineer Standby
+            </span>
+            <span class="font-mono font-bold text-brand-dark">SLA Up to 99.9%</span>
+        </div>
+
+                </div> <!-- Penutup Kolom Kanan NOC -->
+            </div> <!-- Penutup Grid Atas -->
+
+            <!-- Visi & Misi -->
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-brand-slate p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-sm group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-accent text-2xl shadow-sm group-hover:scale-110 transition">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-dark">Visi Kami</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                        Menyediakan sumber daya telekomunikasi yang komprehensif untuk memenuhi kebutuhan pelanggan, serta menghadirkan solusi teknologi terbaik yang adaptif dan handal.
+                    </p>
+                </div>
+
+                <div class="bg-brand-slate p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-sm group">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-accent text-2xl shadow-sm group-hover:scale-110 transition">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-dark">Misi Kami</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                        Tumbuh dan berkembang secara berkelanjutan bersama pelanggan, mitra strategis, dan seluruh tim profesional untuk membangun ekosistem digital Indonesia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AOS SCRIPT & COUNTER-UP ENGINE (STEP 1) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    // Init AOS
+     AOS.init({
+         once: true,
+         duration: 800,
+         easing: 'ease-out-cubic'
+        });
+            
+                // Counter-Up Animation Function
+                function startCounters() {
+                    const counters = document.querySelectorAll('.counter');
+                    counters.forEach(counter => {
+                        const target = parseFloat(counter.getAttribute('data-target'));
+                        const decimals = parseInt(counter.getAttribute('data-decimals')) || 0;
+                        const duration = 2000; 
+                        const stepTime = 20;
+                        const steps = duration / stepTime;
+                        const increment = target / steps;
+                        let current = 0;
+                    
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                counter.innerText = target.toFixed(decimals);
+                                clearInterval(timer);
+                            } else {
+                                counter.innerText = current.toFixed(decimals);
+                            }
+                        }, stepTime);
+                    });
+                }
+            
+    // Trigger Counter pas Section di-Scroll
+    let counterTriggered = false;
+    window.addEventListener('scroll', () => {
+        const aboutSec = document.getElementById('about');
+        if (aboutSec && !counterTriggered) {
+            const rect = aboutSec.getBoundingClientRect();
+            if (rect.top <= window.innerHeight * 0.75) {
+                startCounters();
+                counterTriggered = true;
+            }
+        }
+        
+    });
+
+    // Function Trigger Progress Bar Animation (STEP 2)
+    function startProgressBars() {
+        const bars = document.querySelectorAll('.noc-progress-bar');
+        bars.forEach(bar => {
+            const targetWidth = bar.getAttribute('data-width');
+            setTimeout(() => {
+                bar.style.width = targetWidth;
+            }, 300);
+        });
+    }
+
+    // Update Event Scroll Trigger
+    let nocTriggered = false;
+    window.addEventListener('scroll', () => {
+        const aboutSec = document.getElementById('about');
+        if (aboutSec && !nocTriggered) {
+            const rect = aboutSec.getBoundingClientRect();
+            if (rect.top <= window.innerHeight * 0.75) {
+                startCounters();
+                startProgressBars(); // <--- Panggil Progress Bar di sini
+                nocTriggered = true;
+            }
+        }
+    });
+</script>
+
+    <!-- SECTION KEUNGGULAN (CLEAN, ELEGAN & MODERN HOVER) -->
+<section id="keunggulan" class="py-24 bg-[#f4fbf9] relative overflow-hidden border-t border-teal-100">
+    <!-- Glow Decorative Background (Biar Gak Polos Melompong) -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-teal-100/50 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="inline-block px-4 py-1.5 bg-teal-100/80 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                <i class="fa-solid fa-star mr-1"></i> Mengapa Memilih Kami
+            </span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
+                Keunggulan Utama <span class="text-brand-accent">AirLink</span>
+            </h2>
+            <p class="text-slate-600 text-sm md:text-base mt-4">
+                Komitmen penuh kami dalam memberikan konektivitas tanpa kompromi bagi mitra bisnis.
+            </p>
+        </div>
+
+        <!-- Grid Cards (4 Kolom) -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-brand-accent/10 overflow-hidden">
+                <!-- Line Accent Warna di Paling Atas Card -->
+                <div class="absolute top-0 left-0 w-full h-1 bg-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                
+                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-2xl mb-6 border border-teal-100 shadow-sm group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                    <i class="fa-solid fa-tags"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">Harga Bersaing</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Beragam pilihan paket internet dan streaming dengan biaya paling kompetitif tanpa mengurangi kualitas layanan.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-brand-accent/10 overflow-hidden">
+                <!-- Line Accent Warna di Paling Atas Card -->
+                <div class="absolute top-0 left-0 w-full h-1 bg-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+
+                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-2xl mb-6 border border-teal-100 shadow-sm group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">Dukungan Teknis 24/7</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Tim teknis profesional siap membantu jam berapa pun untuk memastikan konektivitas terus berfungsi secara optimal.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-brand-accent/10 overflow-hidden">
+                <!-- Line Accent Warna di Paling Atas Card -->
+                <div class="absolute top-0 left-0 w-full h-1 bg-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+
+                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-2xl mb-6 border border-teal-100 shadow-sm group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">Cepat &amp; Stabil</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Akses internet kecepatan tinggi berkualitas tinggi yang memungkinkan kegiatan online lancar tanpa gangguan.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-brand-accent/10 overflow-hidden">
+                <!-- Line Accent Warna di Paling Atas Card -->
+                <div class="absolute top-0 left-0 w-full h-1 bg-brand-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+
+                <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-2xl mb-6 border border-teal-100 shadow-sm group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">Keamanan Terjamin</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Sistem autentikasi dan pengamanan jaringan berlapis melindungi data pengguna dari akses tidak diinginkan.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- PRODUK & LAYANAN (BENTO GRID WITH NEW TAB LINKING) -->
+<section id="layanan" class="py-24 bg-white relative overflow-hidden border-t border-teal-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+            <span class="inline-block px-4 py-1.5 bg-teal-100/80 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                Ekosistem Solusi
+            </span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
+                Produk & Layanan <span class="text-brand-accent">AirLink</span>
+            </h2>
+            <p class="text-slate-600 text-sm md:text-base mt-4">
+                Infrastruktur dan solusi teknologi terpadu untuk mendukung operasional bisnis skala enterprise maupun publik.
+            </p>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- 01. AIRLINK-BIZ (FEATURED CARD) -->
+            <div class="lg:col-span-2 bg-gradient-to-br from-brand-slate via-white to-teal-50/40 p-8 md:p-10 rounded-3xl border border-brand-accent/30 hover:border-brand-accent transition duration-300 shadow-xl relative flex flex-col justify-between group overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-3 py-1 bg-brand-accent text-white text-xs font-bold rounded-full uppercase tracking-wider shadow-sm">
+                            ★ Flagship Dedicated Service
+                        </span>
+                    </div>
+
+                    <h3 class="text-3xl font-extrabold text-brand-dark mb-4 group-hover:text-brand-accent transition">
+                        AirLink-Biz
+                    </h3>
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
+                        Layanan Internet Dedicated berkinerja tinggi yang dirancang khusus untuk memenuhi kebutuhan konektivitas bisnis enterprise. Menjamin performa 100% stabil tanpa batasan kuota maupun pengguna.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 bg-white rounded-xl border border-teal-100 flex items-center gap-3 shadow-sm">
+                            <i class="fa-solid fa-gauge-high text-brand-accent text-xl"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-brand-dark">Kecepatan Simetris</h4>
+                                <p class="text-xs text-slate-500">100% Unggah & Unduh Sama</p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-teal-100 flex items-center gap-3 shadow-sm">
+                            <i class="fa-solid fa-shield-virus text-brand-accent text-xl"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-brand-dark">Jaminan Uptime High SLA</h4>
+                                <p class="text-xs text-slate-500">Uptime hingga 99.9%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between pt-4 border-t border-teal-100">
+                    <span class="text-xs text-slate-500"><i class="fa-solid fa-network-wired text-brand-accent mr-1"></i> Termasuk IP Publik Statis</span>
+                    <a href="biz.html" target="_blank" class="px-5 py-2.5 bg-brand-accent hover:bg-teal-600 text-white font-bold text-xs rounded-xl transition shadow-md shadow-brand-accent/20 flex items-center gap-2">
+                        <span>Detail AirLink-Biz</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 02. AIRLINK-BROADBAND -->
+            <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                    </div>
+                
+                    <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                        AirLink-Broadband
+                    </h3>
+                
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Solusi Wi-Fi publik berkualitas tinggi untuk hotel, kafe, kampus, dan pusat perbelanjaan dengan halaman login kustomisasi.
+                    </p>
+                
+                    <ul class="space-y-2.5 text-xs text-slate-600 mb-8">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Jangkauan Area Fleksibel</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Custom Brand Login Page</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Laporan Penggunaan Terperinci</li>
+                    </ul>
+                </div>
+            
+                <a href="broadband.html" target="_blank" class="w-full py-3 px-4 bg-brand-accent text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 hover:bg-teal-600 transition shadow-md shadow-brand-accent/20">
+                    <span>Detail AirLink-Broadband</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- 03. AIRLINK-CONNECT -->
+            <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                            <i class="fa-solid fa-user-lock"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                        AirLink-Connect
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Layanan VPN perusahaan untuk akses jaringan internal yang aman dengan enkripsi data tingkat tinggi bagi tim remote.
+                    </p>
+
+                    <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Secure Remote Access</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Dukungan Multi-Platform</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Centralized Monitoring</li>
+                    </ul>
+                </div>
+
+                <a href="connect.html" target="_blank" class="w-full py-3 px-4 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition shadow-sm mt-4">
+                    <span>Detail AirLink-Connect</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- 04. AIRLINK-DC -->
+            <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="400">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                        AirLink-DC
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Fasilitas Data Center aman untuk colocation, cloud hosting, dan penyimpanan data skala besar berstandar industri.
+                    </p>
+
+                    <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Colocation & Cloud Hosting</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Uptime SLA 99.9%</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Eco Cooling System</li>
+                    </ul>
+                </div>
+
+                <a href="datacenter.html" target="_blank" class="w-full py-3 px-4 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition shadow-sm mt-4">
+                    <span>Detail AirLink-DC</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+            <!-- 05. AIRLINK-AOS -->
+            <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="500">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                        AirLink-AOS
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Advanced Operations Service (Managed Service) untuk memelihara dan mengoptimalkan infrastruktur TI perusahaan.
+                    </p>
+
+                    <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Skalabilitas Fleksibel</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Expert Support Standby</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Laporan Kinerja Berkala</li>
+                    </ul>
+                </div>
+
+                <a href="aos.html" target="_blank" class="w-full py-3 px-4 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition shadow-sm mt-4">
+                    <span>Detail AirLink-AOS</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- INFRASTRUKTUR & JARINGAN GLOBAL (LIGHT THEME) -->
+    <section id="infrastruktur" class="py-24 bg-[#f4fbf9] relative overflow-hidden border-t border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block px-4 py-1.5 bg-teal-100/80 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                    Global Network Backbone
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
+                    Infrastruktur & <span class="text-brand-accent">Jaringan Global</span>
+                </h2>
+                <p class="text-slate-600 text-sm md:text-base mt-4">
+                    Jaringan backbone berkecepatan tinggi yang terhubung langsung ke Exchange Internasional, CDN Global, dan Local IX Domestik.
+                </p>
+            </div>
+
+            <!-- 3 Card Utamanya -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                
+                <!-- CARD 1: GLOBAL INTERNET EXCHANGE -->
+                <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-earth-asia"></i>
+                            </div>
+                            <span class="px-2.5 py-1 bg-teal-50 text-brand-accent text-[10px] font-bold rounded-full border border-teal-200">
+                                Global IX
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            Global Internet Exchange
+                        </h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
+                            Terhubung langsung secara fisik dengan pertukaran traffic internasional untuk akses cepat tanpa bottleneck.
+                        </p>
+
+                        <!-- LOGO GRID -->
+                        <div class="space-y-3 mb-6">
+                            <span class="text-[11px] font-bold text-brand-accent uppercase tracking-wider block">GIX Connection:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/SGIX.png" class="h-5 w-auto object-contain" alt="SGIX"> SGIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/meta/0081FB" class="w-3.5 h-3.5" alt="Meta"> Meta
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/Equinix.png" class="h-5 w-auto object-contain" alt="Equinix"> Equinix
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/alibabacloud/FF6A00" class="w-3.5 h-3.5" alt="Alibaba"> Alibaba
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/cloudflare/F38020" class="w-3.5 h-3.5" alt="Cloudflare"> Cloudflare
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/E.png" class="w-3.5 h-3.5" alt="Edgio"> Edgio
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/apple/000000" class="w-3.5 h-3.5" alt="Apple"> Apple
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/Google.png" class="h-5 w-auto object-contain" alt="Google"> Google
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-teal-100 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fa-solid fa-route text-brand-accent"></i>
+                        <span>Jalur SG - ID: Indigo, B2JS, MCS, China Telecom</span>
+                    </div>
+                </div>
+
+                <!-- CARD 2: CONTENT DELIVERY NETWORK -->
+                <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                            </div>
+                            <span class="px-2.5 py-1 bg-teal-50 text-brand-accent text-[10px] font-bold rounded-full border border-teal-200">
+                                Ultra Low Latency
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            Content Delivery Network
+                        </h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
+                            Pengiriman konten langsung berkecepatan tinggi dari server terdekat untuk pengalaman streaming & browsing tanpa buffering.
+                        </p>
+
+                        <!-- LOGO GRID -->
+                        <div class="space-y-3 mb-6">
+                            <span class="text-[11px] font-bold text-brand-accent uppercase tracking-wider block">Direct CDN Delivered:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/meta/0081FB" class="w-3.5 h-3.5" alt="Meta"> Meta
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/akamai/009933" class="w-3.5 h-3.5" alt="Akamai"> Akamai
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/zen.png" class="h-5 w-auto object-contain" alt="Zenlayer"> Zenlayer
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/GC.png" class="h-5 w-auto object-contain" alt="Google"> Google Cloud
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/Tencent.png" class="h-5 w-auto object-contain" alt="Tencent"> Tencent
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/netflix/E50914" class="w-3.5 h-3.5" alt="Netflix"> Netflix
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/AWS.png" class="h-5 w-auto object-contain" alt="AWS"> AWS
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/mc.png" class="h-5 w-auto object-contain" alt="Microsoft"> Microsoft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-teal-100 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fa-solid fa-cloud text-brand-accent"></i>
+                        <span>Sertifikasi Cloud & Streaming Direct Peering</span>
+                    </div>
+                </div>
+
+                <!-- CARD 3: LOCAL EXCHANGE & PNI -->
+                <div class="group relative bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <span class="px-2.5 py-1 bg-teal-50 text-brand-accent text-[10px] font-bold rounded-full border border-teal-200">
+                                Domestik Peering
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            Local Exchange & PNI
+                        </h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
+                            Interkoneksi ke Internet Exchange lokal ternama di Indonesia serta dukungan Private Network Peering (PNI) untuk pertukaran data langsung.
+                        </p>
+
+                        <!-- LOGO GRID -->
+                        <div class="space-y-3 mb-6">
+                            <span class="text-[11px] font-bold text-brand-accent uppercase tracking-wider block">Local IX Interconnection:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/APJII.png" class="h-5 w-auto object-contain" alt="IIX"> IIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/bix.png" class="h-5 w-auto object-contain" alt="Biznet BIX"> Biznet BIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/Openixp.png" class="h-5 w-auto object-contain" alt="OpenIXP"> OpenIXP
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/JKTIX.png" class="h-5 w-auto object-contain" alt="JKTIX"> JKTIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/odix.png" class="h-5 w-auto object-contain" alt="ODIX"> ODIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/CBNC.png" class="h-5 w-auto object-contain" alt="CBN Content"> CBN Content
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-teal-50/50 hover:bg-teal-100/60 text-slate-800 rounded-xl text-xs font-semibold border border-teal-200/60 transition cursor-pointer shadow-sm">
+                                    <img src="img/CXC.png" class="h-5 w-auto object-contain" alt="CXC"> CXC
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-teal-100 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fa-solid fa-lock text-brand-accent"></i>
+                        <span>Private Network Peering (PNI) Direct Access</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BANNER IP TRANSIT CARRIERS -->
+            <div class="bg-white p-8 md:p-10 rounded-3xl border border-teal-100 shadow-xl overflow-hidden relative">
+                
+                <div class="flex items-center gap-5 mb-8 border-b border-teal-100 pb-6">
+                    <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-3xl shrink-0 border border-teal-100 shadow-sm">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl md:text-2xl font-extrabold text-brand-dark tracking-wide">
+                            Global Internet & IP Transit Carriers
+                        </h4>
+                        <p class="text-sm text-slate-600 mt-1">
+                            Didukung oleh jaringan backbone internasional Tier-1 kelas dunia untuk keandalan koneksi tanpa batas:
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Running Marquee Track -->
+                <div class="relative w-full overflow-hidden mask-gradient">
+                    <div class="animate-marquee items-center gap-12 py-4">
+                        
+                        <!-- Set 1 Logotype -->
+                        <div class="flex items-center gap-12 shrink-0">
+                            <img src="img/singtel.png" alt="Singtel" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/telstra.png" alt="Telstra" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/china.png" alt="China Telecom" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/tata.png" alt="Tata" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/arelion.png" alt="Arelion" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/he.png" alt="Hurricane Electric" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/pccw.png" alt="PCCW Global" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/sparkle.png" alt="Sparkle" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/cogent.png" alt="Cogent" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                        </div>
+
+                        <!-- Set 2 Logotype -->
+                        <div class="flex items-center gap-12 shrink-0">
+                            <img src="img/singtel.png" alt="Singtel" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/telstra.png" alt="Telstra" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/china.png" alt="China Telecom" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/tata.png" alt="Tata" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/arelion.png" alt="Arelion" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/he.png" alt="Hurricane Electric" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/pccw.png" alt="PCCW Global" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/sparkle.png" alt="Sparkle" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                            <img src="img/Cogent.png" alt="Cogent" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition duration-300 cursor-pointer">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CEK COVERAGE JANGKAUAN (WITH AUTO-GPS / SHARELOCK) -->
+<section id="coverage" class="py-20 bg-brand-slate relative overflow-hidden border-t border-teal-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-teal-100 shadow-xl max-w-4xl mx-auto relative overflow-hidden">
+            <!-- Glow Background Hiasan -->
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-teal-100 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="inline-block px-4 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                    <i class="fa-solid fa-location-dot mr-1"></i> Area Jangkauan Layanan
+                </span>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark tracking-tight">
+                    Cek Ketersediaan <span class="text-brand-accent">Jaringan AirLink</span>
+                </h2>
+                <p class="text-slate-600 text-xs md:text-sm mt-3">
+                    Masukkan detail lokasi atau gunakan fitur GPS Sharelock untuk memverifikasi titik ODP terdekat secara presisi.
+                </p>
+            </div>
+
+            <!-- INPUT FIELD FORM -->
+            <div class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <!-- Nama Customer -->
+                    <div>
+                        <label class="block text-xs font-bold text-brand-dark mb-1">Nama Lengkap / Perusahaan</label>
+                        <input type="text" id="cov-name" placeholder="Contoh: Muhammad Mario Aryanto / XoDigitalStudio" 
+                               class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition bg-teal-50/30">
+                    </div>
+
+                    <!-- Pilihan Layanan -->
+                    <div>
+                        <label class="block text-xs font-bold text-brand-dark mb-1">Kebutuhan Layanan</label>
+                        <select id="cov-service" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition bg-teal-50/30 text-slate-700">
+                            <option value="AirLink-Biz (Internet Dedicated)">AirLink-Biz (Internet Dedicated)</option>
+                            <option value="AirLink-Broadband">AirLink-Broadband</option>
+                            <option value="AirLink-Connect (VPN)">AirLink-Connect (VPN Perusahaan)</option>
+                            <option value="AirLink-DC & AOS">Data Center / Managed Service</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Alamat / Lokasi Manual -->
+                <div>
+                    <label class="block text-xs font-bold text-brand-dark mb-1">Alamat Lengkap / Patokan Lokasi</label>
+                    <textarea id="cov-address" rows="2" placeholder="Contoh: Perum Two Rivers Residence Blok A NO 7" 
+                              class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition bg-teal-50/30"></textarea>
+                </div>
+
+                <!-- TOMBOL AMBIL GPS SHARELOCK -->
+                <div class="p-4 bg-teal-50/60 rounded-2xl border border-teal-200/80 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-lg shrink-0">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-brand-dark">Titik Koordinat GPS (Sharelock)</h4>
+                            <p id="gps-status" class="text-[11px] text-slate-500">Klik tombol samping untuk mengambil lokasi presisi Anda</p>
+                        </div>
+                    </div>
+                    <button type="button" id="btn-get-gps" onclick="getLocation()" class="w-full sm:w-auto px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs rounded-xl transition shadow-sm flex items-center justify-center gap-2 cursor-pointer shrink-0">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <span>Ambil Lokasi Saya</span>
+                    </button>
+                </div>
+
+                <!-- Field Hidden Menyimpan Koordinat -->
+                <input type="hidden" id="cov-lat" value="">
+                <input type="hidden" id="cov-lng" value="">
+
+                <!-- TOMBOL SEND TO WA -->
+                <button type="button" id="btn-cek-wa" class="w-full py-3.5 bg-brand-accent hover:bg-teal-600 text-white font-bold text-xs md:text-sm rounded-xl transition shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 cursor-pointer">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Cek & Verifikasi Titik Lokasi via WA CS</span>
+                </button>
+            </div>
+
+            <p class="text-[11px] text-slate-400 text-center mt-4">
+                *Tim teknis kami akan langsung memverifikasi ketersediaan port ODP terdekat dan menghubungi Anda kembali.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SCRIPT GPS SHARELOCK & DIRECT WA -->
+<script>
+    // Function Ambil Koordinat GPS Browser
+    function getLocation() {
+        var status = document.getElementById('gps-status');
+        var btn = document.getElementById('btn-get-gps');
+
+        if (navigator.geolocation) {
+            status.innerText = "Sedang mendeteksi lokasi GPS...";
+            btn.classList.add('opacity-50');
+            
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    var lat = position.coords.latitude;
+                    var lng = position.coords.longitude;
+                    
+                    document.getElementById('cov-lat').value = lat;
+                    document.getElementById('cov-lng').value = lng;
+
+                    status.innerHTML = "<span class='text-emerald-600 font-bold'>✓ Lokasi Berhasil Dideteksi!</span> (" + lat.toFixed(5) + ", " + lng.toFixed(5) + ")";
+                    btn.classList.remove('opacity-50');
+                    btn.classList.replace('bg-teal-600', 'bg-emerald-600');
+                    btn.innerHTML = "<i class='fa-solid fa-check'></i> Tersetel";
+                },
+                function(error) {
+                    status.innerHTML = "<span class='text-red-500'>Gagal mengambil lokasi. Pastikan izin lokasi (GPS) diaktifkan.</span>";
+                    btn.classList.remove('opacity-50');
+                }
+            );
+        } else {
+            status.innerText = "Browser Anda tidak mendukung fitur Geolocation.";
+        }
+    }
+
+    // Function Kirim Data Ke WA CS
+    document.getElementById('btn-cek-wa').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        var name = document.getElementById('cov-name').value.trim();
+        var service = document.getElementById('cov-service').value;
+        var address = document.getElementById('cov-address').value.trim();
+        var lat = document.getElementById('cov-lat').value;
+        var lng = document.getElementById('cov-lng').value;
+
+        if (!name || !address) {
+            alert('Mohon isi Nama dan Alamat Lengkap lokasi Anda!');
+            return;
+        }
+
+        var text = 'Halo Tim CS AirLink, saya mau verifikasi jangkauan lokasi:%0A%0A' +
+                   '• *Nama:* ' + encodeURIComponent(name) + '%0A' +
+                   '• *Kebutuhan Layanan:* ' + encodeURIComponent(service) + '%0A' +
+                   '• *Alamat Lokasi:* ' + encodeURIComponent(address) + '%0A';
+
+        // Jika user klik tombol Sharelock GPS
+        if (lat && lng) {
+            var mapsUrl = 'https://maps.google.com/?q=' + lat + ',' + lng;
+            text += '• *Koordinat GPS:* ' + lat + ', ' + lng + '%0A' +
+                    '• *Link Google Maps:* ' + encodeURIComponent(mapsUrl) + '%0A';
+        }
+
+        text += '%0AMohon bantu pengecekan ketersediaan ODP/ODC terdekat ya. Terima kasih!';
+
+        window.open('https://wa.me/62818710071?text=' + text, '_blank');
+    });
+</script>
+
+    <!-- MITRA & KLIEN KAMI (LIGHT THEME) -->
+    <section id="partner" class="py-24 bg-white relative overflow-hidden border-t border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block px-4 py-1.5 bg-teal-100/80 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                    Trusted Network Ecosystem
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
+                    Mitra & <span class="text-brand-accent">Klien Terpercaya</span>
+                </h2>
+                <p class="text-slate-600 text-sm md:text-base mt-4">
+                    Dipercaya oleh institusi pemerintah, perusahaan skala nasional, hingga penyedia layanan telekomunikasi ternama.
+                </p>
+            </div>
+
+            <!-- BLOK 1: PARTNER JARINGAN -->
+            <div class="mb-16">
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <span class="h-px w-12 bg-teal-200"></span>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent flex items-center gap-2">
+                        <i class="fa-solid fa-handshake"></i> Partner Jaringan & Provider
+                    </h3>
+                    <span class="h-px w-12 bg-teal-200"></span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6">
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/CBNC.png" alt="CBN" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/Matrix.png" alt="Matrix" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/FB.png" alt="FiberStar" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/LA.png" alt="Lintasarta" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/Xl.png" alt="XL axiata" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/indo.png" alt="Indosat Ooredoo" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/iforte.png" alt="Iforte" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/MORATELINDO.png" alt="MORATELINDO" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/NTT.PNG" alt="NTT DATA" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/biznet.png" alt="Biznet" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOK 2: KLIEN TERPERCAYA -->
+            <div>
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <span class="h-px w-12 bg-teal-200"></span>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent flex items-center gap-2">
+                        <i class="fa-solid fa-building"></i> Klien & Institusi Utama
+                    </h3>
+                    <span class="h-px w-12 bg-teal-200"></span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/BPADKJT.png" alt="BPAD JAKARTA" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/ppg.png" alt="PPG" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/mac.png" alt="MAC-CLEAR" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/HAWK.png" alt="HAWK" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/studio23.png" alt="Studio 23" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/ipc.png" alt="IPC" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1 cursor-pointer">
+                        <img src="img/topsusu.png" alt="Top Susu" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION SOSMED INTERAKTIF (OVAL BUTTON & TIGHT TRIGGER RADIUS) -->
+<section id="sosmed" class="py-24 bg-gradient-to-b from-white via-teal-50/40 to-brand-slate relative overflow-hidden border-t border-teal-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="inline-block px-4 py-1.5 bg-teal-100/80 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                Komunitas & Update
+            </span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
+                Terhubung Langsung dengan <span class="text-brand-accent">Kami</span>
+            </h2>
+            <p class="text-slate-600 text-sm md:text-base mt-3">
+                Arahkan kursor atau sentuh tombol di bawah untuk membuka semua saluran media sosial resmi AirLink.
+            </p>
+        </div>
+
+        <!-- WRAPPER UTAMA (RADIUS PRESISI) -->
+        <div class="relative max-w-3xl mx-auto py-16 flex items-center justify-center min-h-[360px]" id="sosmed-wrapper">
+            
+            <!-- TOMBOL TENGAH (BENTUK OVAL / CAPSULE PIP IH) -->
+            <div id="sosmed-trigger" class="z-30 cursor-pointer text-center bg-white border-2 border-brand-accent/50 hover:border-brand-accent px-8 md:px-12 py-5 rounded-full shadow-xl hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-300 flex items-center gap-4 select-none hover:scale-105 active:scale-95">
+                <div class="w-10 h-10 bg-teal-50 rounded-full flex items-center justify-center text-brand-accent text-lg shadow-inner shrink-0">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="text-xs md:text-sm font-black text-brand-dark tracking-wider uppercase">
+                        Jelajahi Sosmed
+                    </h3>
+                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest block -mt-0.5">
+                        AirLink Network
+                    </span>
+                </div>
+            </div>
+
+            <!-- CONTAINER KARTU SOSMED -->
+            <div id="sosmed-cards" class="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none transition-all duration-500 opacity-0 scale-75">
+                
+                <!-- 1. INSTAGRAM (Kiri Atas) -->
+                <a href="https://instagram.com" target="_blank" class="sosmed-card absolute -translate-x-36 -translate-y-24 md:-translate-x-60 md:-translate-y-28 w-48 md:w-56 p-3.5 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-500 to-amber-500 text-white shadow-xl hover:scale-110 transition duration-300 flex items-center justify-between pointer-events-auto">
+                    <div class="flex items-center gap-2.5">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                        <span class="font-bold text-xs">@airlink.id</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+
+                <!-- 2. TIKTOK (Kanan Atas) -->
+                <a href="https://tiktok.com" target="_blank" class="sosmed-card absolute translate-x-36 -translate-y-24 md:translate-x-60 md:-translate-y-28 w-48 md:w-56 p-3.5 rounded-2xl bg-gradient-to-r from-slate-900 via-black to-slate-800 text-white border border-slate-700 shadow-xl hover:scale-110 transition duration-300 flex items-center justify-between pointer-events-auto">
+                    <div class="flex items-center gap-2.5">
+                        <i class="fa-brands fa-tiktok text-xl"></i>
+                        <span class="font-bold text-xs">@airlink.official</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+
+                <!-- 3. YOUTUBE (Kiri Bawah) -->
+                <a href="https://youtube.com" target="_blank" class="sosmed-card absolute -translate-x-36 translate-y-24 md:-translate-x-60 md:translate-y-28 w-48 md:w-56 p-3.5 rounded-2xl bg-gradient-to-r from-red-600 to-rose-700 text-white shadow-xl hover:scale-110 transition duration-300 flex items-center justify-between pointer-events-auto">
+                    <div class="flex items-center gap-2.5">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                        <span class="font-bold text-xs">AirLink Channel</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+
+                <!-- 4. FACEBOOK (Kanan Bawah) -->
+                <a href="https://facebook.com" target="_blank" class="sosmed-card absolute translate-x-36 translate-y-24 md:translate-x-60 md:translate-y-28 w-48 md:w-56 p-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-xl hover:scale-110 transition duration-300 flex items-center justify-between pointer-events-auto">
+                    <div class="flex items-center gap-2.5">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                        <span class="font-bold text-xs">AirLink Network</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SCRIPT EVENT DENGAN RADIUS TRIGGGER DIPERSETIL / HANYA SAAT NEMPEL TOMBOL OVAL -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const trigger = document.getElementById('sosmed-trigger');
+        const cards = document.getElementById('sosmed-cards');
+        const wrapper = document.getElementById('sosmed-wrapper');
+
+        if (trigger && cards) {
+            // Mekar HANYA ketika kursor menempel langsung di tombol Oval
+            trigger.addEventListener('mouseenter', function() {
+                cards.classList.remove('opacity-0', 'scale-75');
+                cards.classList.add('opacity-100', 'scale-100');
+            });
+
+            // Tetap mekar selama kursor berada di areawrapper (agar user bisa klik kartunya)
+            wrapper.addEventListener('mouseleave', function() {
+                cards.classList.remove('opacity-100', 'scale-100');
+                cards.classList.add('opacity-0', 'scale-75');
+            });
+
+            // Toggle untuk Tap di HP
+            trigger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                cards.classList.toggle('opacity-0');
+                cards.classList.toggle('scale-75');
+                cards.classList.toggle('opacity-100');
+                cards.classList.toggle('scale-100');
+            });
+        }
+    });
+</script>
+
+    <!-- FOOTER ENTERPRISE LEVEL -->
+<footer id="kontak" class="bg-brand-dark pt-16 pb-12 border-t border-slate-800 text-slate-300 relative overflow-hidden">
+    <!-- Glow hiasan di background footer -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Grid Footer Utama (5 Kolom di Desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10 pb-12 border-b border-slate-800">
+            
+            <!-- Kolom 1: Logo & Profil Singkat (Lebar 2 Kolom) -->
+            <div class="lg:col-span-2 space-y-4">
+                <a href="#" class="inline-block">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-16 md:h-20 w-auto object-contain">
+                </a>
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    <strong class="text-white">PT Air Lintas Komunikasi</strong> — Provider Internet Dedicated, Managed Service, & Infrastructure IT Solution terpercaya untuk efisiensi dan akselerasi bisnis Anda.
+                </p>
+                
+                <!-- Quick Social Icons -->
+                <div class="pt-2 flex items-center gap-3 text-slate-400">
+                    <span class="text-[11px] font-bold uppercase text-slate-500 tracking-wider">Ikuti Kami:</span>
+                    <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800/80 hover:bg-brand-accent hover:text-white flex items-center justify-center text-xs transition border border-slate-700">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800/80 hover:bg-brand-accent hover:text-white flex items-center justify-center text-xs transition border border-slate-700">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800/80 hover:bg-brand-accent hover:text-white flex items-center justify-center text-xs transition border border-slate-700">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800/80 hover:bg-brand-accent hover:text-white flex items-center justify-center text-xs transition border border-slate-700">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolom 2: Ekosistem Layanan (Quick Links) -->
+            <div>
+                <h4 class="text-white text-sm font-bold tracking-wide uppercase mb-4 border-l-2 border-brand-accent pl-2.5">
+                    Solusi Layanan
+                </h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li><a href="biz.html" target="_blank" class="hover:text-brand-accent transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-brand-accent"></i> AirLink-Biz (Dedicated)</a></li>
+                    <li><a href="broadband.html" target="_blank" class="hover:text-brand-accent transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-brand-accent"></i> AirLink-Broadband</a></li>
+                    <li><a href="connect.html" target="_blank" class="hover:text-brand-accent transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-brand-accent"></i> AirLink-Connect (VPN)</a></li>
+                    <li><a href="datacenter.html" target="_blank" class="hover:text-brand-accent transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-brand-accent"></i> AirLink-DC (Data Center)</a></li>
+                    <li><a href="aos.html" target="_blank" class="hover:text-brand-accent transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[9px] text-brand-accent"></i> AirLink-AOS (Managed)</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Informasi Kontak -->
+            <div>
+                <h4 class="text-white text-sm font-bold tracking-wide uppercase mb-4 border-l-2 border-brand-accent pl-2.5">
+                    Kontak Resmi
+                </h4>
+                <ul class="space-y-3 text-xs text-slate-400">
+                    <li>
+                        <a href="https://wa.me/62818710071?text=Halo%20AirLink,%20saya%20tertarik%20dengan%20layanan%20internet%20dan%20IT%20Solution." target="_blank" class="hover:text-brand-accent transition flex items-center gap-2.5 group">
+                            <div class="w-7 h-7 bg-slate-800 rounded-md flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition shrink-0">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </div>
+                            <span>+62 818 7100 71</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=airlinknetindo@gmail.com&su=Tanya%20Layanan%20AirLink" target="_blank" class="hover:text-brand-accent transition flex items-center gap-2.5 group">
+                            <div class="w-7 h-7 bg-slate-800 rounded-md flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition shrink-0">
+                                <i class="fa-solid fa-envelope text-xs"></i>
+                            </div>
+                            <span class="truncate">airlinknetindo@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.airlink.co.id" target="_blank" class="hover:text-brand-accent transition flex items-center gap-2.5 group">
+                            <div class="w-7 h-7 bg-slate-800 rounded-md flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition shrink-0">
+                                <i class="fa-solid fa-globe text-xs"></i>
+                            </div>
+                            <span>www.airlink.co.id</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kolom 4: Alamat & Jam Operasional -->
+            <div>
+                <h4 class="text-white text-sm font-bold tracking-wide uppercase mb-4 border-l-2 border-brand-accent pl-2.5">
+                    Kantor Pusat
+                </h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                    Jl. Bakti No. 37A, RT. 02/RW. 06, Kel. Cilincing, Kec. Cilincing, Jakarta Utara, DKI Jakarta 14120.
+                </p>
+                <a href="https://maps.google.com/?q=Jl.+Bakti+No.+37A+Cilincing+Jakarta+Utara" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-brand-light text-[11px] font-bold rounded-lg border border-slate-700 transition mb-4">
+                    <i class="fa-solid fa-map-location-dot"></i> Buka Google Maps
+                </a>
+
+                <div class="pt-2 border-t border-slate-800/80">
+                    <span class="text-[10px] font-bold text-slate-500 uppercase block mb-1">Dukungan Teknis:</span>
+                    <div class="flex items-center gap-2 text-xs font-semibold text-emerald-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>24/7 Non-Stop NOC Support</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright & Legal Bottom Bar -->
+        <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <p>&copy; 2026 PT Air Lintas Komunikasi. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-[11px]">
+                <span class="text-slate-400">Licensed Internet Service Provider</span>
+                <a href="#about" class="hover:text-slate-300 transition">Kembali ke Atas ↑</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+    <!-- FLOATING WHATSAPP BUTTON (UNIVERSAL SUPPORT & SALES) -->
+<a href="https://wa.me/62818710071?text=Halo%20Tim%20AirLink,%20saya%20ingin%20berkonsultasi%20/%20membutuhkan%20informasi%20mengenai%20layanan%20Anda." 
+   target="_blank" 
+   aria-label="Chat via WhatsApp"
+   class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white">
+    
+    <!-- Icon WA -->
+    <i class="fa-brands fa-whatsapp text-2xl md:text-3xl"></i>
+    
+    <!-- Tooltip Melayang (Muncul Pas Hover) -->
+    <span class="absolute right-full mr-3 bg-brand-dark text-white text-xs px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 shadow-md pointer-events-none font-semibold">
+        Hubungi Tim AirLink 24/7
+    </span>
+
+    <!-- Pulse Ping Animation (Efek Berkedip) -->
+    <span class="absolute inset-0 rounded-full bg-emerald-500 animate-ping opacity-30 -z-10"></span>
+</a>
+
+</body>
+</html>

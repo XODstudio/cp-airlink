@@ -1,0 +1,43 @@
+/* Custom CSS untuk pelengkap Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d2530;
+}
+::-webkit-scrollbar-thumb {
+    background: #529471;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #83b799;
+}
+
+/* ANIMASI RUNNING MARQUEE UNTUK CARRIERS */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+/* Pause animasi saat kursor di-hover */
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(1000%); }
+}

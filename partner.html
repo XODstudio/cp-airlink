@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitra & Klien | PT Air Lintas Komunikasi (AirLink)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR ENTERPRISE -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-14 md:h-16 w-auto object-contain">
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="index.html" class="hover:text-brand-accent transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-accent transition">Tentang</a>
+                    <a href="keunggulan.html" class="hover:text-brand-accent transition">Keunggulan</a>
+                    <a href="layanan.html" class="hover:text-brand-accent transition">Layanan</a>
+                    <a href="infrastruktur.html" class="hover:text-brand-accent transition">Infrastruktur</a>
+                    <a href="coverage.html" class="hover:text-brand-accent transition">Coverage</a>
+                    <a href="partner.html" class="text-brand-accent font-bold border-b-2 border-brand-accent pb-1">Partner & Klien</a>
+                    <a href="index.html#kontak" class="bg-brand-accent hover:bg-teal-600 text-white px-5 py-2.5 rounded-xl font-bold transition shadow-md shadow-brand-accent/20">Hubungi Kami</a>
+                </div>
+
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-700 focus:outline-none p-2">
+                    <i id="hamburger-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-teal-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Beranda</a>
+            <a href="tentang.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Tentang</a>
+            <a href="keunggulan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Keunggulan</a>
+            <a href="layanan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Layanan</a>
+            <a href="infrastruktur.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Infrastruktur</a>
+            <a href="coverage.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Coverage</a>
+            <a href="partner.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-bold text-brand-accent bg-teal-50">Partner & Klien</a>
+            <a href="index.html#kontak" class="mobile-link block w-full text-center px-4 py-2.5 bg-brand-accent text-white font-bold text-xs rounded-xl shadow-md mt-2">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO MINI -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-r from-brand-dark via-slate-900 to-slate-950 text-white overflow-hidden">
+        <div class="absolute top-1/2 -left-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Mitra & Klien</h1>
+                <p class="text-slate-400 text-xs md:text-sm mt-1">Ekosistem Partner Jaringan & Klien Korporasi Terpercaya</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-white/5 border border-white/10 px-4 py-2 rounded-full backdrop-blur-md">
+                <a href="index.html" class="hover:text-brand-light transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-brand-accent"></i>
+                <span class="text-white">Partner & Klien</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MITRA & KLIEN DETAIL -->
+    <section class="py-20 bg-white border-b border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- BLOK 1: PARTNER JARINGAN -->
+            <div class="mb-20">
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <span class="h-px w-12 bg-teal-200"></span>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent flex items-center gap-2">
+                        <i class="fa-solid fa-handshake"></i> Partner Jaringan & Provider
+                    </h3>
+                    <span class="h-px w-12 bg-teal-200"></span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/CBNC.png" alt="CBN" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/Matrix.png" alt="Matrix" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/FB.png" alt="FiberStar" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/LA.png" alt="Lintasarta" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/Xl.png" alt="XL axiata" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/indo.png" alt="Indosat Ooredoo" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/iforte.png" alt="Iforte" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/MORATELINDO.png" alt="MORATELINDO" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/NTT.PNG" alt="NTT DATA" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/biznet.png" alt="Biznet" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOK 2: KLIEN TERPERCAYA -->
+            <div>
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <span class="h-px w-12 bg-teal-200"></span>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent flex items-center gap-2">
+                        <i class="fa-solid fa-building"></i> Klien & Institusi Utama
+                    </h3>
+                    <span class="h-px w-12 bg-teal-200"></span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/BPADKJT.png" alt="BPAD JAKARTA" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/ppg.png" alt="PPG" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/mac.png" alt="MAC-CLEAR" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/HAWK.png" alt="HAWK" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/studio23.png" alt="Studio 23" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/ipc.png" alt="IPC" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                    <div class="group bg-brand-slate p-4 rounded-2xl border border-teal-100 hover:border-brand-accent hover:shadow-md transition duration-300 flex items-center justify-center h-28 hover:-translate-y-1">
+                        <img src="img/topsusu.png" alt="Top Susu" class="h-14 md:h-16 w-auto max-w-[80%] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition duration-300">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark pt-12 pb-8 border-t border-slate-800 text-slate-300 text-center text-xs">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

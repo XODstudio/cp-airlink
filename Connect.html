@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirLink-Connect | Enterprise VPN & Secure Interconnection - PT Air Lintas Komunikasi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR CONNECT -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-9 w-auto object-contain">
+                    <span class="px-2.5 py-0.5 bg-teal-100 text-brand-accent text-xs font-extrabold rounded-md uppercase tracking-wide">Connect</span>
+                </a>
+                
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-brand-accent transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="hidden sm:inline">Halaman Utama</span>
+                    </a>
+                    <a href="#penawaran" class="bg-brand-accent hover:bg-teal-600 text-white px-4 py-2.5 md:px-5 md:py-2.5 rounded-xl font-bold text-xs transition shadow-md shadow-brand-accent/20">
+                        Konsultasi VPN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION AIRLINK-CONNECT (SPLIT SCREEN WITH IMAGE) -->
+    <section class="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-brand-dark to-slate-900 overflow-hidden text-white">
+        <!-- Glow Decorative -->
+        <div class="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Kolom Kiri: Teks -->
+                <div class="lg:col-span-7 text-left space-y-6">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-accent/20 border border-brand-accent/40 rounded-full text-brand-light text-xs font-bold uppercase tracking-widest" data-aos="fade-down">
+                        <i class="fa-solid fa-user-lock"></i> Encrypted Multi-Point Network
+                    </span>
+                    
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-aos="fade-up">
+                        AirLink-<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-emerald-400">Connect</span>
+                    </h1>
+                    
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light" data-aos="fade-up" data-aos-delay="100">
+                        Solusi Enterprise Virtual Private Network (VPN) privat dan aman. Menghubungkan jaringan antar kantor cabang, server lokal, hingga tim kerja remote dengan enkripsi data militer.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#penawaran" class="bg-brand-accent hover:bg-teal-600 text-white px-7 py-3.5 rounded-2xl font-bold text-sm transition shadow-lg shadow-brand-accent/30 flex items-center gap-2">
+                            <span>Minta Penawaran Interkoneksi</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#fitur" class="border border-slate-700 hover:border-brand-accent text-white px-7 py-3.5 rounded-2xl font-bold text-sm transition bg-white/5 backdrop-blur-sm">
+                            Pelajari Keamanan VPN
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: FOTO HERO UTAMA (CYBERSECURITY & NETWORK INTERCONNECTION) -->
+                <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="300">
+                    <div class="relative rounded-3xl overflow-hidden border-2 border-emerald-500/30 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop" 
+                             alt="Cybersecurity & Network VPN" 
+                             class="w-full h-[360px] md:h-[420px] object-cover group-hover:scale-105 transition duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Badge di Atas Gambar -->
+                        <div class="absolute bottom-4 left-4 right-4 p-3.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-white flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-brand-light uppercase block">Data Protection</span>
+                                <h4 class="text-xs font-bold">Encrypted Tunneling IPsec/SSL</h4>
+                            </div>
+                            <span class="px-2.5 py-1 bg-emerald-500/30 text-emerald-300 border border-emerald-400/40 text-[10px] font-bold rounded-full">
+                                Protected
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT STATS CONNECT -->
+    <section class="py-10 bg-white border-b border-teal-100 relative z-20 -mt-8 max-w-6xl mx-auto px-4 rounded-3xl shadow-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">AES-256</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">High Level Encryption</p>
+            </div>
+            <div class="p-4 border-l border-teal-100">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">Multi-Site</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">Branch Interconnection</p>
+            </div>
+            <div class="p-4 border-l border-teal-100">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">Zero Latency</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">Optimized Tunneling</p>
+            </div>
+            <div class="p-4 border-l border-teal-100">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">Cross-Platform</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">Windows/Mac/Linux/Mobile</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN CONNECT (DENGAN COVER IMAGE KARTU) -->
+    <section id="fitur" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-brand-accent text-xs font-bold uppercase tracking-widest">Keamanan Maksimal</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mt-2">
+                    Fitur Proteksi <span class="text-brand-accent">AirLink-Connect</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 (ENKRIPSI DATA BERLAPIS) -->
+                <div class="bg-white rounded-3xl border border-teal-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <!-- FOTO COVER KARTU 1 -->
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" 
+                             alt="Enkripsi Data Security" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center text-brand-accent shadow-md">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Enkripsi Data Berlapis</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Seluruh lalu lintas data yang dikirim antar kantor pusat dan cabang dienkripsi menggunakan protokol IPsec / SSL VPN berstandar industri.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 (INTERKONEKSI ANTAR CABANG) -->
+                <div class="bg-white rounded-3xl border border-teal-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <!-- FOTO COVER KARTU 2 -->
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" 
+                             alt="Interkoneksi Multi-Site Network" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center text-brand-accent shadow-md">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Interkoneksi Antar Cabang</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Memungkinkan komunikasi data antar server lokal kantor pusat dengan puluhan kantor cabang secara privat seolah berada di satu jaringan lokal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 (SECURE REMOTE WORKFORCE) -->
+                <div class="bg-white rounded-3xl border border-teal-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <!-- FOTO COVER KARTU 3 -->
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=800&auto=format&fit=crop" 
+                             alt="Remote WFH Employee" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center text-brand-accent shadow-md">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Secure Remote Workforce</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Memudahkan karyawan yang bekerja dari rumah (WFH) atau lapangan untuk mengakses server aplikasi perusahaan secara aman dari mana saja.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PENAWARAN (DIRECT WA) -->
+    <section id="penawaran" class="py-20 bg-brand-slate border-t border-teal-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 md:p-12 rounded-3xl border border-teal-100 shadow-xl" data-aos="zoom-in">
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="px-3 py-1 bg-teal-50 border border-teal-200 text-brand-accent text-xs font-bold rounded-full uppercase tracking-widest">
+                        Konsultasi VPN Perusahaan
+                    </span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark mt-3">
+                        Implementasi <span class="text-brand-accent">AirLink-Connect</span>
+                    </h2>
+                    <p class="text-slate-600 text-xs md:text-sm mt-2">
+                        Tim spesialis jaringan kami siap membantu mengonfigurasi topologi VPN sesuai arsitektur TI perusahaan Anda.
+                    </p>
+                </div>
+
+                <form id="connect-form" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Nama Lengkap / Tim IT</label>
+                            <input type="text" id="cn-name" required placeholder="Contoh: Mario (Network Engineer)" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Nama Perusahaan</label>
+                            <input type="text" id="cn-company" required placeholder="Contoh: PT Techno Indonesia" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Jumlah Titik Cabang / User</label>
+                            <select id="cn-nodes" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30 text-slate-700">
+                                <option value="2 - 5 Titik Cabang">2 - 5 Titik Cabang</option>
+                                <option value="6 - 15 Titik Cabang">6 - 15 Titik Cabang</option>
+                                <option value="> 15 Titik Cabang Multi-Site">More than 15 Titik Cabang (Enterprise)</option>
+                                <option value="VPN User Remote (WFH Only)">VPN User Remote Client (WFH)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Lokasi Pusat Server</label>
+                            <input type="text" id="cn-location" required placeholder="Contoh: Data Center Jakarta / Kantor Pusat" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-brand-accent hover:bg-teal-600 text-white font-bold text-sm rounded-xl transition shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 cursor-pointer mt-4">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Konsultasi VPN via WA Enterprise</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CONNECT -->
+    <footer class="bg-brand-dark py-8 text-center text-xs text-slate-400">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. AirLink-Connect Service.</p>
+    </footer>
+
+    <!-- SCRIPT AOS & FORM WA -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        document.getElementById('connect-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var name = document.getElementById('cn-name').value.trim();
+            var company = document.getElementById('cn-company').value.trim();
+            var nodes = document.getElementById('cn-nodes').value;
+            var location = document.getElementById('cn-location').value.trim();
+
+            var text = 'Halo Tim Security AirLink,%0A%0A' +
+                       'Saya mau konsultasi solusi VPN *AirLink-Connect*:%0A' +
+                       '• *Nama:* ' + encodeURIComponent(name) + '%0A' +
+                       '• *Perusahaan:* ' + encodeURIComponent(company) + '%0A' +
+                       '• *Skala Cabang/User:* ' + encodeURIComponent(nodes) + '%0A' +
+                       '• *Lokasi Server Pusat:* ' + encodeURIComponent(location) + '%0A%0A' +
+                       'Mohon bantuan arsitektur topologi dan simulasi biayanya. Terima kasih!';
+
+            window.open('https://wa.me/62818710071?text=' + text, '_blank');
+        });
+    </script>
+</body>
+</html>

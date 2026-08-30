@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverage Area | PT Air Lintas Komunikasi (AirLink)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR ENTERPRISE -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-14 md:h-16 w-auto object-contain">
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="index.html" class="hover:text-brand-accent transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-accent transition">Tentang</a>
+                    <a href="keunggulan.html" class="hover:text-brand-accent transition">Keunggulan</a>
+                    <a href="layanan.html" class="hover:text-brand-accent transition">Layanan</a>
+                    <a href="infrastruktur.html" class="hover:text-brand-accent transition">Infrastruktur</a>
+                    <a href="coverage.html" class="text-brand-accent font-bold border-b-2 border-brand-accent pb-1">Coverage</a>
+                    <a href="partner.html" class="hover:text-brand-accent transition">Partner & Klien</a>
+                    <a href="index.html#kontak" class="bg-brand-accent hover:bg-teal-600 text-white px-5 py-2.5 rounded-xl font-bold transition shadow-md shadow-brand-accent/20">Hubungi Kami</a>
+                </div>
+
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-700 focus:outline-none p-2">
+                    <i id="hamburger-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-teal-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Beranda</a>
+            <a href="tentang.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Tentang</a>
+            <a href="keunggulan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Keunggulan</a>
+            <a href="layanan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Layanan</a>
+            <a href="infrastruktur.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Infrastruktur</a>
+            <a href="coverage.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-bold text-brand-accent bg-teal-50">Coverage</a>
+            <a href="partner.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Partner & Klien</a>
+            <a href="index.html#kontak" class="mobile-link block w-full text-center px-4 py-2.5 bg-brand-accent text-white font-bold text-xs rounded-xl shadow-md mt-2">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO MINI -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-r from-brand-dark via-slate-900 to-slate-950 text-white overflow-hidden">
+        <div class="absolute top-1/2 -left-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Cek Coverage Area</h1>
+                <p class="text-slate-400 text-xs md:text-sm mt-1">Verifikasi Ketersediaan Titik Jaringan & ODP Fiber Optic AirLink</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-white/5 border border-white/10 px-4 py-2 rounded-full backdrop-blur-md">
+                <a href="index.html" class="hover:text-brand-light transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-brand-accent"></i>
+                <span class="text-white">Coverage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM CEK COVERAGE DENGAN GPS -->
+    <section class="py-20 bg-white border-b border-teal-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brand-slate p-8 md:p-12 rounded-3xl border border-teal-100 shadow-xl relative overflow-hidden" data-aos="zoom-in">
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="inline-block px-4 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                        <i class="fa-solid fa-location-dot mr-1"></i> Area Jangkauan Layanan
+                    </span>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-brand-dark tracking-tight">
+                        Cek Ketersediaan <span class="text-brand-accent">Jaringan AirLink</span>
+                    </h2>
+                    <p class="text-slate-600 text-xs md:text-sm mt-3">
+                        Masukkan detail lokasi atau gunakan fitur GPS Sharelock untuk memverifikasi titik ODP terdekat secara presisi.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Nama Lengkap / Perusahaan</label>
+                            <input type="text" id="cov-name" placeholder="Contoh: Mario / Perusahaan X" 
+                                   class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-white">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Kebutuhan Layanan</label>
+                            <select id="cov-service" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-white text-slate-700">
+                                <option value="AirLink-Biz (Internet Dedicated)">AirLink-Biz (Internet Dedicated)</option>
+                                <option value="AirLink-Broadband">AirLink-Broadband</option>
+                                <option value="AirLink-Connect (VPN)">AirLink-Connect (VPN Perusahaan)</option>
+                                <option value="AirLink-DC & AOS">Data Center / Managed Service</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-brand-dark mb-1">Alamat Lengkap / Patokan Lokasi</label>
+                        <textarea id="cov-address" rows="2" placeholder="Contoh: Jl. Bakti No. 37A, Cilincing, Jakarta Utara" 
+                                  class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-white"></textarea>
+                    </div>
+
+                    <!-- TOMBOL AMBIL GPS SHARELOCK -->
+                    <div class="p-4 bg-white rounded-2xl border border-teal-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent text-lg shrink-0">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-brand-dark">Titik Koordinat GPS (Sharelock)</h4>
+                                <p id="gps-status" class="text-[11px] text-slate-500">Klik tombol samping untuk mengambil lokasi presisi Anda</p>
+                            </div>
+                        </div>
+                        <button type="button" id="btn-get-gps" onclick="getLocation()" class="w-full sm:w-auto px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs rounded-xl transition shadow-sm flex items-center justify-center gap-2 cursor-pointer shrink-0">
+                            <i class="fa-solid fa-crosshairs"></i>
+                            <span>Ambil Lokasi Saya</span>
+                        </button>
+                    </div>
+
+                    <input type="hidden" id="cov-lat" value="">
+                    <input type="hidden" id="cov-lng" value="">
+
+                    <button type="button" id="btn-cek-wa" class="w-full py-3.5 bg-brand-accent hover:bg-teal-600 text-white font-bold text-xs md:text-sm rounded-xl transition shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 cursor-pointer">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Cek & Verifikasi Titik Lokasi via WA CS</span>
+                    </button>
+                </div>
+
+                <p class="text-[11px] text-slate-400 text-center mt-4">
+                    *Tim teknis kami akan langsung memverifikasi ketersediaan port ODP terdekat dan menghubungi Anda kembali.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark pt-12 pb-8 border-t border-slate-800 text-slate-300 text-center text-xs">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        function getLocation() {
+            var status = document.getElementById('gps-status');
+            var btn = document.getElementById('btn-get-gps');
+
+            if (navigator.geolocation) {
+                status.innerText = "Sedang mendeteksi lokasi GPS...";
+                btn.classList.add('opacity-50');
+                
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        var lat = position.coords.latitude;
+                        var lng = position.coords.longitude;
+                        
+                        document.getElementById('cov-lat').value = lat;
+                        document.getElementById('cov-lng').value = lng;
+
+                        status.innerHTML = "<span class='text-emerald-600 font-bold'>✓ Lokasi Berhasil Dideteksi!</span> (" + lat.toFixed(5) + ", " + lng.toFixed(5) + ")";
+                        btn.classList.remove('opacity-50');
+                        btn.classList.replace('bg-teal-600', 'bg-emerald-600');
+                        btn.innerHTML = "<i class='fa-solid fa-check'></i> Tersetel";
+                    },
+                    function(error) {
+                        status.innerHTML = "<span class='text-red-500'>Gagal mengambil lokasi. Pastikan izin GPS aktif.</span>";
+                        btn.classList.remove('opacity-50');
+                    }
+                );
+            } else {
+                status.innerText = "Browser tidak mendukung Geolocation.";
+            }
+        }
+
+        document.getElementById('btn-cek-wa').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            var name = document.getElementById('cov-name').value.trim();
+            var service = document.getElementById('cov-service').value;
+            var address = document.getElementById('cov-address').value.trim();
+            var lat = document.getElementById('cov-lat').value;
+            var lng = document.getElementById('cov-lng').value;
+
+            if (!name || !address) {
+                alert('Mohon isi Nama dan Alamat Lengkap lokasi Anda!');
+                return;
+            }
+
+            var text = 'Halo Tim CS AirLink, saya mau verifikasi jangkauan lokasi:%0A%0A' +
+                       '• *Nama:* ' + encodeURIComponent(name) + '%0A' +
+                       '• *Kebutuhan Layanan:* ' + encodeURIComponent(service) + '%0A' +
+                       '• *Alamat Lokasi:* ' + encodeURIComponent(address) + '%0A';
+
+            if (lat && lng) {
+                var mapsUrl = 'https://maps.google.com/?q=' + lat + ',' + lng;
+                text += '• *Koordinat GPS:* ' + lat + ', ' + lng + '%0A' +
+                        '• *Link Google Maps:* ' + encodeURIComponent(mapsUrl) + '%0A';
+            }
+
+            text += '%0AMohon bantu pengecekan ketersediaan ODP terdekat. Terima kasih!';
+            window.open('https://wa.me/62818710071?text=' + text, '_blank');
+        });
+    </script>
+</body>
+</html>

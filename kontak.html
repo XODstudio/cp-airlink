@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami | PT Air Lintas Komunikasi (AirLink)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR ENTERPRISE -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-14 md:h-16 w-auto object-contain">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="index.html" class="hover:text-brand-accent transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-accent transition">Tentang</a>
+                    <a href="keunggulan.html" class="hover:text-brand-accent transition">Keunggulan</a>
+                    <a href="layanan.html" class="hover:text-brand-accent transition">Layanan</a>
+                    <a href="infrastruktur.html" class="hover:text-brand-accent transition">Infrastruktur</a>
+                    <a href="coverage.html" class="hover:text-brand-accent transition">Coverage</a>
+                    <a href="partner.html" class="hover:text-brand-accent transition">Partner & Klien</a>
+                    <a href="kontak.html" class="bg-brand-accent hover:bg-teal-600 text-white px-5 py-2.5 rounded-xl font-bold transition shadow-md shadow-brand-accent/20">Hubungi Kami</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-700 focus:outline-none p-2">
+                    <i id="hamburger-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-teal-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Beranda</a>
+            <a href="tentang.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Tentang</a>
+            <a href="keunggulan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Keunggulan</a>
+            <a href="layanan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Layanan</a>
+            <a href="infrastruktur.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Infrastruktur</a>
+            <a href="coverage.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Coverage</a>
+            <a href="partner.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Partner & Klien</a>
+            <a href="kontak.html" class="mobile-link block w-full text-center px-4 py-2.5 bg-brand-accent text-white font-bold text-xs rounded-xl shadow-md mt-2">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO MINI (KONTAK) -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-r from-brand-dark via-slate-900 to-slate-950 text-white overflow-hidden">
+        <div class="absolute top-1/2 -left-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Hubungi Kami</h1>
+                <p class="text-slate-400 text-xs md:text-sm mt-1">Konsultasi Layanan Jaringan & Dukungan Operasional 24/7</p>
+            </div>
+            <!-- Breadcrumb Navigation -->
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-white/5 border border-white/10 px-4 py-2 rounded-full backdrop-blur-md">
+                <a href="index.html" class="hover:text-brand-light transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-brand-accent"></i>
+                <span class="text-white">Kontak</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FORM & DETAIL KONTAK -->
+    <section class="py-20 bg-white border-b border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Kolom Kiri: Informasi Kontak & Kantor -->
+                <div class="lg:col-span-5 space-y-8" data-aos="fade-right">
+                    <div>
+                        <span class="inline-block px-3 py-1 bg-teal-50 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-wider mb-3">
+                            Direct Support
+                        </span>
+                        <h2 class="text-3xl font-extrabold text-brand-dark tracking-tight leading-tight">
+                            Siap Membantu Solusi <span class="text-brand-accent">Koneksi Bisnis Anda</span>
+                        </h2>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            Hubungi tim representatif atau teknisi kami melalui saluran komunikasi resmi di bawah untuk informasi penawaran dan kebutuhan teknis.
+                        </p>
+                    </div>
+
+                    <!-- Kartu Detail Kontak -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-brand-slate border border-teal-100">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 text-brand-accent flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-brand-dark">Kantor Pusat</h3>
+                                <p class="text-xs text-slate-600 leading-relaxed mt-0.5">
+                                    Jl. Bakti No. 37A, RT. 02/RW. 06, Kel. Cilincing, Kec. Cilincing, Jakarta Utara, DKI Jakarta 14120.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-brand-slate border border-teal-100">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 text-brand-accent flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-brand-dark">Customer Support / Sales</h3>
+                                <p class="text-xs text-slate-600 mt-0.5">+62 818 7100 71</p>
+                                <p class="text-xs text-slate-600 mt-0.5">+62 819 1008 0822</p>
+                                <span class="text-[11px] text-emerald-600 font-bold block mt-1">● Respons Cepat WhatsApp 24/7</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-brand-slate border border-teal-100">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 text-brand-accent flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-brand-dark">Email Resmi</h3>
+                                <p class="text-xs text-slate-600 mt-0.5">airlinknetindo@gmail.com</p>
+                                <p class="text-xs text-slate-400">cs@airlink.co.id</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Form Kirim Pesan Direct WA -->
+                <div class="lg:col-span-7 bg-brand-slate p-8 md:p-10 rounded-3xl border border-teal-100 shadow-xl" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-2">Formulir Pesan & Konsultasi</h3>
+                    <p class="text-xs text-slate-500 mb-6">Isi formulir berikut, pesan akan otomatis diformat dan terkirim langsung ke WhatsApp Support AirLink.</p>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-brand-dark mb-1">Nama Lengkap</label>
+                                <input type="text" id="contact-name" required placeholder="Contoh: Muhamamd Mario Aryanto"
+                                       class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm bg-white focus:outline-none focus:border-brand-accent">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-brand-dark mb-1">Nama Perusahaan / Instansi (Opsional)</label>
+                                <input type="text" id="contact-company" placeholder="Contoh: PT Air Lintas Komunikasi"
+                                       class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm bg-white focus:outline-none focus:border-brand-accent">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-brand-dark mb-1">Nomor WhatsApp / HP</label>
+                                <input type="tel" id="contact-phone" required placeholder="Contoh: 08123456789"
+                                       class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm bg-white focus:outline-none focus:border-brand-accent">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-brand-dark mb-1">Topik Kebutuhan</label>
+                                <select id="contact-subject" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm bg-white focus:outline-none focus:border-brand-accent text-slate-700">
+                                    <option value="Konsultasi Paket Dedicated (AirLink-Biz)">Konsultasi Dedicated Internet</option>
+                                    <option value="Konsultasi Layanan Broadband / Wi-Fi Publik">Layanan Broadband Wi-Fi</option>
+                                    <option value="Data Center & Colocation (AirLink-DC)">Data Center & Colocation</option>
+                                    <option value="Kemitraan Jaringan / RT RW Net">Kemitraan Jaringan</option>
+                                    <option value="Bantuan Teknis & Gangguan NOC">Dukungan Teknis NOC</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Pesan / Keterangan Kebutuhan</label>
+                            <textarea id="contact-message" rows="4" required placeholder="Tuliskan detail kebutuhan atau pertanyaan Anda di sini..."
+                                      class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm bg-white focus:outline-none focus:border-brand-accent"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 bg-brand-accent hover:bg-teal-600 text-white font-bold text-xs md:text-sm rounded-xl transition shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Kirim Pesan ke WhatsApp AirLink</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- EMBED GOOGLE MAPS KANTOR PUSAT -->
+            <div class="mt-16 rounded-3xl overflow-hidden border border-teal-200 shadow-lg" data-aos="fade-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0691512403274!2d106.92484347586828!3d-6.121345460021671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a200f68d6d531%3A0x8849b29cbca868da!2sJl.%20Bakti%20No.37A%2C%20RT.2%2FRW.6%2C%20Cilincing%2C%20Kec.%20Cilincing%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014120!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="380" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark pt-12 pb-8 border-t border-slate-800 text-slate-300 text-center text-xs">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT AOS & DIRECT WA ENGINE -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Form Submit to WA CS
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var name = document.getElementById('contact-name').value.trim();
+            var company = document.getElementById('contact-company').value.trim() || '-';
+            var phone = document.getElementById('contact-phone').value.trim();
+            var subject = document.getElementById('contact-subject').value;
+            var message = document.getElementById('contact-message').value.trim();
+
+            var text = 'Halo Tim AirLink, saya ingin berkonsultasi:%0A%0A' +
+                       '• *Nama:* ' + encodeURIComponent(name) + '%0A' +
+                       '• *Perusahaan / Instansi:* ' + encodeURIComponent(company) + '%0A' +
+                       '• *No. HP/WA:* ' + encodeURIComponent(phone) + '%0A' +
+                       '• *Topik:* ' + encodeURIComponent(subject) + '%0A' +
+                       '• *Pesan:* ' + encodeURIComponent(message) + '%0A%0A' +
+                       'Mohon informasi lebih lanjut. Terima kasih!';
+
+            window.open('https://wa.me/6281910080822?text=' + text, '_blank');
+        });
+    </script>
+</body>
+</html>

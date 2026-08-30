@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk & Layanan | PT Air Lintas Komunikasi (AirLink)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR ENTERPRISE -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-14 md:h-16 w-auto object-contain">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="index.html" class="hover:text-brand-accent transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-accent transition">Tentang</a>
+                    <a href="keunggulan.html" class="hover:text-brand-accent transition">Keunggulan</a>
+                    <a href="layanan.html" class="text-brand-accent font-bold border-b-2 border-brand-accent pb-1">Layanan</a>
+                    <a href="infrastruktur.html" class="hover:text-brand-accent transition">Infrastruktur</a>
+                    <a href="index.html#coverage" class="hover:text-brand-accent transition">Coverage</a>
+                    <a href="index.html#partner" class="hover:text-brand-accent transition">Partner & Klien</a>
+                    <a href="index.html#kontak" class="bg-brand-accent hover:bg-teal-600 text-white px-5 py-2.5 rounded-xl font-bold transition shadow-md shadow-brand-accent/20">Hubungi Kami</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-700 focus:outline-none p-2">
+                    <i id="hamburger-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-teal-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Beranda</a>
+            <a href="tentang.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Tentang</a>
+            <a href="keunggulan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Keunggulan</a>
+            <a href="layanan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-bold text-brand-accent bg-teal-50">Layanan</a>
+            <a href="infrastruktur.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Infrastruktur</a>
+            <a href="index.html#coverage" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Coverage</a>
+            <a href="index.html#partner" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Partner & Klien</a>
+            <a href="index.html#kontak" class="mobile-link block w-full text-center px-4 py-2.5 bg-brand-accent text-white font-bold text-xs rounded-xl shadow-md mt-2">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO MINI (LAYANAN) -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-r from-brand-dark via-slate-900 to-slate-950 text-white overflow-hidden">
+        <div class="absolute top-1/2 -left-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Produk & Layanan</h1>
+                <p class="text-slate-400 text-xs md:text-sm mt-1">Ekosistem Solusi Konektivitas & Infrastruktur IT Terpadu</p>
+            </div>
+            <!-- Breadcrumb Navigation -->
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-white/5 border border-white/10 px-4 py-2 rounded-full backdrop-blur-md">
+                <a href="index.html" class="hover:text-brand-light transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-brand-accent"></i>
+                <span class="text-white">Layanan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION KATALOG PRODUK & LAYANAN LENGKAP -->
+    <section class="py-20 bg-white border-b border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="inline-block px-4 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                    Portfolio Solusi
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tight">
+                    Pilihan Paket Layanan <span class="text-brand-accent">AirLink</span>
+                </h2>
+                <p class="text-slate-600 text-sm md:text-base mt-4">
+                    Koneksi internet andal, sistem jaringan privat, hingga pusat data berstandar enterprise yang dapat disesuaikan dengan skala kebutuhan operasional Anda.
+                </p>
+            </div>
+
+            <!-- GRID DAFTAR 5 LAYANAN UTAMA -->
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- 01. AIRLINK-BIZ (FEATURED CARD) -->
+                <div class="lg:col-span-2 bg-gradient-to-br from-brand-slate via-white to-teal-50/40 p-8 md:p-10 rounded-3xl border border-brand-accent/30 hover:border-brand-accent transition duration-300 shadow-xl relative flex flex-col justify-between group overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 bg-brand-accent text-white text-xs font-bold rounded-full uppercase tracking-wider shadow-sm">
+                                ★ Flagship Dedicated Service
+                            </span>
+                        </div>
+
+                        <h3 class="text-3xl font-extrabold text-brand-dark mb-4 group-hover:text-brand-accent transition">
+                            AirLink-Biz
+                        </h3>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-8 max-w-2xl">
+                            Layanan Internet Dedicated berkinerja tinggi yang dirancang khusus untuk memenuhi kebutuhan konektivitas bisnis enterprise. Menjamin performa 100% stabil tanpa batasan kuota maupun pengguna.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                            <div class="p-4 bg-white rounded-xl border border-teal-100 flex items-center gap-3 shadow-sm">
+                                <i class="fa-solid fa-gauge-high text-brand-accent text-xl"></i>
+                                <div>
+                                    <h4 class="text-xs font-bold text-brand-dark">Kecepatan Simetris</h4>
+                                    <p class="text-xs text-slate-500">100% Unggah & Unduh Sama</p>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-white rounded-xl border border-teal-100 flex items-center gap-3 shadow-sm">
+                                <i class="fa-solid fa-shield-virus text-brand-accent text-xl"></i>
+                                <div>
+                                    <h4 class="text-xs font-bold text-brand-dark">Jaminan Uptime High SLA</h4>
+                                    <p class="text-xs text-slate-500">Uptime hingga 99.9%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-teal-100">
+                        <span class="text-xs text-slate-500"><i class="fa-solid fa-network-wired text-brand-accent mr-1"></i> Termasuk IP Publik Statis</span>
+                        <a href="biz.html" class="px-5 py-2.5 bg-brand-accent hover:bg-teal-600 text-white font-bold text-xs rounded-xl transition shadow-md shadow-brand-accent/20 flex items-center gap-2">
+                            <span>Detail AirLink-Biz</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 02. AIRLINK-BROADBAND -->
+                <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                        </div>
+                    
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            AirLink-Broadband
+                        </h3>
+                    
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Solusi Wi-Fi publik berkualitas tinggi untuk hotel, kafe, kampus, dan pusat perbelanjaan dengan halaman login kustomisasi.
+                        </p>
+                    
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Jangkauan Area Fleksibel</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Custom Brand Login Page</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Laporan Penggunaan Terperinci</li>
+                        </ul>
+                    </div>
+                
+                    <a href="broadband.html" class="w-full py-3 px-4 bg-brand-accent text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 hover:bg-teal-600 transition shadow-md shadow-brand-accent/20">
+                        <span>Detail AirLink-Broadband</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- 03. AIRLINK-CONNECT -->
+                <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                                <i class="fa-solid fa-user-lock"></i>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            AirLink-Connect
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Layanan VPN perusahaan untuk akses jaringan internal yang aman dengan enkripsi data tingkat tinggi bagi tim remote.
+                        </p>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Secure Remote Access</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Dukungan Multi-Platform</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Centralized Monitoring</li>
+                        </ul>
+                    </div>
+
+                    <a href="connect.html" class="w-full py-3 px-4 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition shadow-sm mt-4">
+                        <span>Detail AirLink-Connect</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- 04. AIRLINK-DC -->
+                <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            AirLink-DC
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Fasilitas Data Center aman untuk colocation, cloud hosting, dan penyimpanan data skala besar berstandar industri.
+                        </p>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Colocation & Cloud Hosting</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Uptime SLA 99.9%</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Eco Cooling System</li>
+                        </ul>
+                    </div>
+
+                    <a href="datacenter.html" class="w-full py-3 px-4 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition shadow-sm mt-4">
+                        <span>Detail AirLink-DC</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- 05. AIRLINK-AOS -->
+                <div class="bg-white p-8 rounded-3xl border border-teal-100 hover:border-brand-accent transition duration-300 shadow-lg flex flex-col justify-between group" data-aos="fade-up" data-aos-delay="500">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center text-brand-accent text-xl group-hover:scale-110 transition">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            AirLink-AOS
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Advanced Operations Service (Managed Service) untuk memelihara dan mengoptimalkan infrastruktur TI perusahaan.
+                        </p>
+
+                        <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Skalabilitas Fleksibel</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Expert Support Standby</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-accent"></i> Laporan Kinerja Berkala</li>
+                        </ul>
+                    </div>
+
+                    <a href="aos.html" class="w-full py-3 px-4 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2 transition shadow-sm mt-4">
+                        <span>Detail AirLink-AOS</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark pt-12 pb-8 border-t border-slate-800 text-slate-300 text-center text-xs">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

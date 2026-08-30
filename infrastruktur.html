@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastruktur & Jaringan Global | PT Air Lintas Komunikasi (AirLink)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR ENTERPRISE -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-14 md:h-16 w-auto object-contain">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="index.html" class="hover:text-brand-accent transition">Beranda</a>
+                    <a href="tentang.html" class="hover:text-brand-accent transition">Tentang</a>
+                    <a href="keunggulan.html" class="hover:text-brand-accent transition">Keunggulan</a>
+                    <a href="layanan.html" class="hover:text-brand-accent transition">Layanan</a>
+                    <a href="infrastruktur.html" class="text-brand-accent font-bold border-b-2 border-brand-accent pb-1">Infrastruktur</a>
+                    <a href="coverage.html" class="hover:text-brand-accent transition">Coverage</a>
+                    <a href="partner.html" class="hover:text-brand-accent transition">Partner & Klien</a>
+                    <a href="index.html#kontak" class="bg-brand-accent hover:bg-teal-600 text-white px-5 py-2.5 rounded-xl font-bold transition shadow-md shadow-brand-accent/20">Hubungi Kami</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-700 focus:outline-none p-2">
+                    <i id="hamburger-icon" class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-teal-100 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="index.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Beranda</a>
+            <a href="tentang.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Tentang</a>
+            <a href="keunggulan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Keunggulan</a>
+            <a href="layanan.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Layanan</a>
+            <a href="infrastruktur.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-bold text-brand-accent bg-teal-50">Infrastruktur</a>
+            <a href="coverage.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Coverage</a>
+            <a href="partner.html" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700">Partner & Klien</a>
+            <a href="index.html#kontak" class="mobile-link block w-full text-center px-4 py-2.5 bg-brand-accent text-white font-bold text-xs rounded-xl shadow-md mt-2">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO MINI (INFRASTRUKTUR) -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-r from-brand-dark via-slate-900 to-slate-950 text-white overflow-hidden">
+        <div class="absolute top-1/2 -left-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Infrastruktur & Backbone</h1>
+                <p class="text-slate-400 text-xs md:text-sm mt-1">Jaringan Global Terintegrasi & Redundant Network Architecture</p>
+            </div>
+            <!-- Breadcrumb Navigation -->
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-white/5 border border-white/10 px-4 py-2 rounded-full backdrop-blur-md">
+                <a href="index.html" class="hover:text-brand-light transition">Beranda</a>
+                <i class="fa-solid fa-chevron-right text-[10px] text-brand-accent"></i>
+                <span class="text-white">Infrastruktur</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 PILAR JARINGAN UTAMA -->
+    <section class="py-20 bg-white border-b border-teal-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="inline-block px-4 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-brand-accent text-xs font-bold uppercase tracking-widest mb-3">
+                    Global Network Backbone
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tight">
+                    Infrastruktur & <span class="text-brand-accent">Jaringan Global</span>
+                </h2>
+                <p class="text-slate-600 text-sm md:text-base mt-4">
+                    Jaringan backbone berkecepatan tinggi yang terhubung langsung ke Exchange Internasional, CDN Global, dan Local IX Domestik.
+                </p>
+            </div>
+
+            <!-- 3 Card Utamanya -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                
+                <!-- CARD 1: GLOBAL INTERNET EXCHANGE -->
+                <div class="group relative bg-brand-slate p-8 rounded-3xl border border-teal-100 hover:border-brand-accent hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-accent text-xl shadow-sm group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-earth-asia"></i>
+                            </div>
+                            <span class="px-2.5 py-1 bg-teal-50 text-brand-accent text-[10px] font-bold rounded-full border border-teal-200">
+                                Global IX
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            Global Internet Exchange
+                        </h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
+                            Terhubung langsung secara fisik dengan pertukaran traffic internasional untuk akses cepat tanpa bottleneck.
+                        </p>
+
+                        <!-- LOGO GRID -->
+                        <div class="space-y-3 mb-6">
+                            <span class="text-[11px] font-bold text-brand-accent uppercase tracking-wider block">GIX Connection:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/SGIX.png" class="h-5 w-auto object-contain" alt="SGIX"> SGIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/meta/0081FB" class="w-3.5 h-3.5" alt="Meta"> Meta
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/Equinix.png" class="h-5 w-auto object-contain" alt="Equinix"> Equinix
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/alibabacloud/FF6A00" class="w-3.5 h-3.5" alt="Alibaba"> Alibaba
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/cloudflare/F38020" class="w-3.5 h-3.5" alt="Cloudflare"> Cloudflare
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/E.png" class="w-3.5 h-3.5" alt="Edgio"> Edgio
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/apple/000000" class="w-3.5 h-3.5" alt="Apple"> Apple
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/Google.png" class="h-5 w-auto object-contain" alt="Google"> Google
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-teal-100 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fa-solid fa-route text-brand-accent"></i>
+                        <span>Jalur SG - ID: Indigo, B2JS, MCS, China Telecom</span>
+                    </div>
+                </div>
+
+                <!-- CARD 2: CONTENT DELIVERY NETWORK -->
+                <div class="group relative bg-brand-slate p-8 rounded-3xl border border-teal-100 hover:border-brand-accent hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-accent text-xl shadow-sm group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                            </div>
+                            <span class="px-2.5 py-1 bg-teal-50 text-brand-accent text-[10px] font-bold rounded-full border border-teal-200">
+                                Ultra Low Latency
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            Content Delivery Network
+                        </h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
+                            Pengiriman konten langsung berkecepatan tinggi dari server terdekat untuk pengalaman streaming & browsing tanpa buffering.
+                        </p>
+
+                        <!-- LOGO GRID -->
+                        <div class="space-y-3 mb-6">
+                            <span class="text-[11px] font-bold text-brand-accent uppercase tracking-wider block">Direct CDN Delivered:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/meta/0081FB" class="w-3.5 h-3.5" alt="Meta"> Meta
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/akamai/009933" class="w-3.5 h-3.5" alt="Akamai"> Akamai
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/zen.png" class="h-5 w-auto object-contain" alt="Zenlayer"> Zenlayer
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/GC.png" class="h-5 w-auto object-contain" alt="Google"> Google Cloud
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/Tencent.png" class="h-5 w-auto object-contain" alt="Tencent"> Tencent
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="https://cdn.simpleicons.org/netflix/E50914" class="w-3.5 h-3.5" alt="Netflix"> Netflix
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/AWS.png" class="h-5 w-auto object-contain" alt="AWS"> AWS
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/mc.png" class="h-5 w-auto object-contain" alt="Microsoft"> Microsoft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-teal-100 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fa-solid fa-cloud text-brand-accent"></i>
+                        <span>Sertifikasi Cloud & Streaming Direct Peering</span>
+                    </div>
+                </div>
+
+                <!-- CARD 3: LOCAL EXCHANGE & PNI -->
+                <div class="group relative bg-brand-slate p-8 rounded-3xl border border-teal-100 hover:border-brand-accent hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-brand-accent text-xl shadow-sm group-hover:scale-110 transition duration-300">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <span class="px-2.5 py-1 bg-teal-50 text-brand-accent text-[10px] font-bold rounded-full border border-teal-200">
+                                Domestik Peering
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3 group-hover:text-brand-accent transition">
+                            Local Exchange & PNI
+                        </h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-6">
+                            Interkoneksi ke Internet Exchange lokal ternama di Indonesia serta dukungan Private Network Peering (PNI) untuk pertukaran data langsung.
+                        </p>
+
+                        <!-- LOGO GRID -->
+                        <div class="space-y-3 mb-6">
+                            <span class="text-[11px] font-bold text-brand-accent uppercase tracking-wider block">Local IX Interconnection:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/APJII.png" class="h-5 w-auto object-contain" alt="IIX"> IIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/bix.png" class="h-5 w-auto object-contain" alt="Biznet BIX"> Biznet BIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/Openixp.png" class="h-5 w-auto object-contain" alt="OpenIXP"> OpenIXP
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/JKTIX.png" class="h-5 w-auto object-contain" alt="JKTIX"> JKTIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/odix.png" class="h-5 w-auto object-contain" alt="ODIX"> ODIX
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/CBNC.png" class="h-5 w-auto object-contain" alt="CBN Content"> CBN Content
+                                </div>
+                                <div class="flex items-center gap-2 px-3 py-1.5 bg-white text-slate-800 rounded-xl text-xs font-semibold border border-teal-200 shadow-sm">
+                                    <img src="img/CXC.png" class="h-5 w-auto object-contain" alt="CXC"> CXC
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-teal-100 text-xs text-slate-500 flex items-center gap-2">
+                        <i class="fa-solid fa-lock text-brand-accent"></i>
+                        <span>Private Network Peering (PNI) Direct Access</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BANNER IP TRANSIT CARRIERS -->
+            <div class="bg-brand-slate p-8 md:p-10 rounded-3xl border border-teal-100 shadow-lg overflow-hidden relative" data-aos="fade-up">
+                <div class="flex items-center gap-5 mb-8 border-b border-teal-100 pb-6">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-accent text-3xl shrink-0 border border-teal-100 shadow-sm">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl md:text-2xl font-extrabold text-brand-dark tracking-wide">
+                            Global Internet & IP Transit Carriers
+                        </h4>
+                        <p class="text-sm text-slate-600 mt-1">
+                            Didukung oleh jaringan backbone internasional Tier-1 kelas dunia untuk keandalan koneksi tanpa batas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Running Marquee Track -->
+                <div class="relative w-full overflow-hidden mask-gradient">
+                    <div class="animate-marquee items-center gap-12 py-4">
+                        <div class="flex items-center gap-12 shrink-0">
+                            <img src="img/singtel.png" alt="Singtel" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/telstra.png" alt="Telstra" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/china.png" alt="China Telecom" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/tata.png" alt="Tata" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/arelion.png" alt="Arelion" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/he.png" alt="Hurricane Electric" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/pccw.png" alt="PCCW Global" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/sparkle.png" alt="Sparkle" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                            <img src="img/cogent.png" alt="Cogent" class="h-8 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark pt-12 pb-8 border-t border-slate-800 text-slate-300 text-center text-xs">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

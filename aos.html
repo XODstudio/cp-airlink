@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirLink-AOS | Advanced Operations Service (Managed IT) - PT Air Lintas Komunikasi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a2540',    
+                            slate: '#f0f9f8',   
+                            accent: '#00a896',  
+                            light: '#02c39a',   
+                            muted: '#64748b'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-[#f4fbf9] text-slate-800 font-sans antialiased">
+
+    <!-- NAVBAR AOS -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="img/AR.png" alt="AirLink Logo" class="h-9 w-auto object-contain">
+                    <span class="px-2.5 py-0.5 bg-teal-100 text-brand-accent text-xs font-extrabold rounded-md uppercase tracking-wide">AOS</span>
+                </a>
+                
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="text-xs md:text-sm font-semibold text-slate-600 hover:text-brand-accent transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="hidden sm:inline">Halaman Utama</span>
+                    </a>
+                    <a href="#penawaran" class="bg-brand-accent hover:bg-teal-600 text-white px-4 py-2.5 md:px-5 md:py-2.5 rounded-xl font-bold text-xs transition shadow-md shadow-brand-accent/20">
+                        Konsultasi Managed Service
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION AIRLINK-AOS (SPLIT SCREEN WITH IMAGE) -->
+    <section class="relative pt-32 pb-20 bg-gradient-to-br from-brand-dark via-teal-950 to-slate-900 overflow-hidden text-white">
+        <!-- Glow Decorative -->
+        <div class="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Kolom Kiri: Teks -->
+                <div class="lg:col-span-7 text-left space-y-6">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-accent/20 border border-brand-accent/40 rounded-full text-brand-light text-xs font-bold uppercase tracking-widest" data-aos="fade-down">
+                        <i class="fa-solid fa-sliders"></i> Managed IT & Infrastructure
+                    </span>
+                    
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-aos="fade-up">
+                        AirLink-<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-emerald-400">AOS</span>
+                    </h1>
+                    
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed font-light" data-aos="fade-up" data-aos-delay="100">
+                        Advanced Operations Service. Solusi pengelolaan, pemeliharaan, dan pemantauan infrastruktur IT perusahaan secara menyeluruh oleh tim engineer profesional AirLink.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#penawaran" class="bg-brand-accent hover:bg-teal-600 text-white px-7 py-3.5 rounded-2xl font-bold text-sm transition shadow-lg shadow-brand-accent/30 flex items-center gap-2">
+                            <span>Ajukan Managed Service</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#fitur" class="border border-teal-400/50 hover:bg-teal-500/20 text-white px-7 py-3.5 rounded-2xl font-bold text-sm transition backdrop-blur-sm">
+                            Cakup Layanan AOS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: FOTO HERO UTAMA (NETWORK ENGINEER & NOC MONITORING) -->
+                <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="300">
+                    <div class="relative rounded-3xl overflow-hidden border-2 border-teal-500/30 shadow-2xl group">
+                        <img src="img/Ar24.png" 
+                             alt="IT Managed Service Engineers" 
+                             class="w-full h-[360px] md:h-[420px] object-cover group-hover:scale-105 transition duration-700">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Badge di Atas Gambar -->
+                        <div class="absolute bottom-4 left-4 right-4 p-3.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-white flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] font-mono text-brand-light uppercase block">Expert Operations</span>
+                                <h4 class="text-xs font-bold">24/7 Proactive NOC Engineers</h4>
+                            </div>
+                            <span class="px-2.5 py-1 bg-emerald-500/30 text-emerald-300 border border-emerald-400/40 text-[10px] font-bold rounded-full">
+                                Standby SLA
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT STATS AOS -->
+    <section class="py-10 bg-white border-b border-teal-100 relative z-20 -mt-8 max-w-6xl mx-auto px-4 rounded-3xl shadow-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">24 / 7</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">Proactive Monitoring</p>
+            </div>
+            <div class="p-4 border-l border-teal-100">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">&lt; 2 Jam</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">On-Site Tech SLA Response</p>
+            </div>
+            <div class="p-4 border-l border-teal-100">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">Zero Capital</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">Efisiensi Biaya OpEx</p>
+            </div>
+            <div class="p-4 border-l border-teal-100">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-accent">Certified</h3>
+                <p class="text-xs text-slate-500 font-semibold mt-1">Expert Network Engineers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR UTAMA AOS (DENGAN COVER IMAGE KARTU) -->
+    <section id="fitur" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-brand-accent text-xs font-bold uppercase tracking-widest">Solusi Terpadu</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark mt-2">
+                    Cakupan Layanan <span class="text-brand-accent">AirLink-AOS</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 (NETWORK & SERVER MANAGEMENT) -->
+                <div class="bg-white rounded-3xl border border-teal-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <!-- FOTO COVER KARTU 1 -->
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/ns.png" 
+                             alt="Network & Server Management" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center text-brand-accent shadow-md">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Network & Server Management</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Pengelolaan rutin perangkat router, switch, firewall, hingga server internal kantor Anda agar selalu berjalan optimal tanpa bottleneck.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 (PREVENTIVE MAINTENANCE) -->
+                <div class="bg-white rounded-3xl border border-teal-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <!-- FOTO COVER KARTU 2 -->
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/pw.png" 
+                             alt="Preventive On-Site Maintenance" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center text-brand-accent shadow-md">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Preventive Maintenance</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Pemeriksaan berkala secara fisik (on-site) maupun remote untuk mencegah gangguan perangkat sebelum mempengaruhi operasional kerja.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 (PERIODIC PERFORMANCE REPORT) -->
+                <div class="bg-white rounded-3xl border border-teal-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <!-- FOTO COVER KARTU 3 -->
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" 
+                             alt="Performance Analytics Audit Report" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center text-brand-accent shadow-md">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Periodic Performance Report</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Laporan audit kesehatan jaringan dan perangkat TI secara rutin tiap bulan sebagai acuan pengembangan infrastruktur bisnis Anda.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PENAWARAN (DIRECT WA) -->
+    <section id="penawaran" class="py-20 bg-brand-slate border-t border-teal-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 md:p-12 rounded-3xl border border-teal-100 shadow-xl" data-aos="zoom-in">
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="px-3 py-1 bg-teal-50 border border-teal-200 text-brand-accent text-xs font-bold rounded-full uppercase tracking-widest">
+                        Konsultasi Managed Service
+                    </span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark mt-3">
+                        Serahkan Pengelolaan TI ke <span class="text-brand-accent">AirLink-AOS</span>
+                    </h2>
+                    <p class="text-slate-600 text-xs md:text-sm mt-2">
+                        Fokus pada pengembangan bisnis Anda, biarkan tim teknisi pakar kami yang menjaga infrastruktur IT tetap stabil.
+                    </p>
+                </div>
+
+                <form id="aos-form" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Nama Lengkap / Jabatan</label>
+                            <input type="text" id="aos-name" required placeholder="Contoh: Mario (Operational Director)" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Nama Perusahaan / Kantor</label>
+                            <input type="text" id="aos-company" required placeholder="Contoh: PT Solusi Utama" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Fokus Layanan AOS Dibutuhkan</label>
+                            <select id="aos-type" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30 text-slate-700">
+                                <option value="Full Managed Network & Server">Full Managed Network & Server</option>
+                                <option value="Preventive Maintenance & On-Call Support">Preventive Maintenance & On-Call Support</option>
+                                <option value="IT Infrastructure Audit & Optimization">IT Infrastructure Audit & Optimization</option>
+                                <option value="Custom Managed Service Contract">Custom Contract Enterprise</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-brand-dark mb-1">Lokasi Perusahaan / Kantor</label>
+                            <input type="text" id="aos-location" required placeholder="Contoh: Jakarta Selatan / Tangerang" class="w-full px-4 py-3 rounded-xl border border-teal-200 text-xs md:text-sm focus:outline-none focus:border-brand-accent bg-teal-50/30">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-brand-accent hover:bg-teal-600 text-white font-bold text-sm rounded-xl transition shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 cursor-pointer mt-4">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Konsultasi AOS via WA Enterprise</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER AOS -->
+    <footer class="bg-brand-dark py-8 text-center text-xs text-slate-400">
+        <p>&copy; 2026 PT Air Lintas Komunikasi. AirLink-AOS Managed Service.</p>
+    </footer>
+
+    <!-- SCRIPT AOS & FORM WA -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        document.getElementById('aos-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var name = document.getElementById('aos-name').value.trim();
+            var company = document.getElementById('aos-company').value.trim();
+            var type = document.getElementById('aos-type').value;
+            var location = document.getElementById('aos-location').value.trim();
+
+            var text = 'Halo Tim Managed Service AirLink,%0A%0A' +
+                       'Saya tertarik dengan layanan *AirLink-AOS*:%0A' +
+                       '• *Nama:* ' + encodeURIComponent(name) + '%0A' +
+                       '• *Perusahaan:* ' + encodeURIComponent(company) + '%0A' +
+                       '• *Fokus Managed Service:* ' + encodeURIComponent(type) + '%0A' +
+                       '• *Lokasi Kantor:* ' + encodeURIComponent(location) + '%0A%0A' +
+                       'Mohon bantuan penjadwalan diskusi / audit infrastruktur TI kami. Terima kasih!';
+
+            window.open('https://wa.me/62818710071?text=' + text, '_blank');
+        });
+    </script>
+</body>
+</html>
